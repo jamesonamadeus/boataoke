@@ -1,0 +1,37 @@
+.banner {
+	@include transition(all 0.5s ease);
+	@include flexbox(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+	background: transparent;
+	padding: 20px 20px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 75;
+
+	.logo {
+		&-heading {
+			@include font-size(28);
+			margin: 0;
+		}
+
+		&-main {
+			margin: 14px 10px 0;
+			width: 180px;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.banner {
+		padding: 15px;
+
+		.logo {
+			&-main {
+				margin: 14px 0 0;
+				width: 160px;
+			}
+		}
+	}
+}
