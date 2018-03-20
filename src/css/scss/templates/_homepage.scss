@@ -1,8 +1,99 @@
 .main {
-	background: url(../../images/bg-lg.jpg) no-repeat center center fixed;
+	background: url(../images/bg-lg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100vh;
+
+	@include flexbox(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+.comingsoon {
+	@include flexbox(flex);
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	padding: 20px;
+	margin: 0 auto;
+
+	&-heading {
+		.h2 {
+			@include font-size(92);
+			color: $style-1;
+			font-weight: 500;
+			margin: 0 auto;
+			text-align: center;
+
+			&-inside {
+				color: $white;
+				margin-left: -20px;
+			}
+		}
+
+		&-supp {
+			@include font-size(30);
+			color: $white;
+			font-weight: 300;
+			text-align: center;
+		}
+	}
+
+	&-signup {
+		text-align: center;
+	}
+
+	.form-helper {
+		color: $white;
+		font-weight: 300;
+		margin: 0 auto 3px;
+	}
+	.margin {
+		margin: 8px auto 0px;
+	}
+
+	.email {
+		@include font-size(20);
+		padding: 8px;
+		margin: 8px auto 5px;
+		width: 100%;
+	}
+
+	.submit {
+		@include font-size(20);
+		background: $style-3;
+		border-radius: 3px;
+		color: $white;
+		cursor: pointer;
+		margin: 0 auto;
+		padding: 10px;
+		text-align: center;
+		width: 100%;
+
+		&:hover,
+		&:active {
+			background: $style-1;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.comingsoon {
+		padding: 10px;
+
+		&-heading {
+			.h2 {
+				@include font-size(70);
+			}
+
+			&-supp {
+				@include font-size(22);
+				color: $white;
+				font-weight: 300;
+				text-align: center;
+			}
+		}
+	}
 }

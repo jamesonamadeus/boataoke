@@ -44,7 +44,7 @@
 
 --------------------------------------------------------------------- */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 100%;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +64,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 h1 {
   font-size: 68px;
@@ -307,12 +307,93 @@ object {
     align-items: center; } }
 
 .main {
-  background: url(../../images/bg-lg.jpg) no-repeat center center fixed;
+  background: url(../images/bg-lg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.comingsoon {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto; }
+  .comingsoon-heading .h2 {
+    font-size: 92px !important;
+    font-size: 5.75rem !important;
+    color: #69bbc2;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center; }
+    .comingsoon-heading .h2-inside {
+      color: #fff;
+      margin-left: -20px; }
+  .comingsoon-heading-supp {
+    font-size: 30px !important;
+    font-size: 1.875rem !important;
+    color: #fff;
+    font-weight: 300;
+    text-align: center; }
+  .comingsoon-signup {
+    text-align: center; }
+  .comingsoon .form-helper {
+    color: #fff;
+    font-weight: 300;
+    margin: 0 auto 3px; }
+  .comingsoon .margin {
+    margin: 8px auto 0px; }
+  .comingsoon .email {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    padding: 8px;
+    margin: 8px auto 5px;
+    width: 100%; }
+  .comingsoon .submit {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    background: #d7becf;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 100%; }
+    .comingsoon .submit:hover, .comingsoon .submit:active {
+      background: #69bbc2; }
+
+@media only screen and (max-width: 480px) {
+  .comingsoon {
+    padding: 10px; }
+    .comingsoon-heading .h2 {
+      font-size: 70px !important;
+      font-size: 4.375rem !important; }
+    .comingsoon-heading-supp {
+      font-size: 22px !important;
+      font-size: 1.375rem !important;
+      color: #fff;
+      font-weight: 300;
+      text-align: center; } }
 
 body {
   margin: 0; }
