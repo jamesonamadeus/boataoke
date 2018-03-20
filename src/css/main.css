@@ -338,6 +338,9 @@ object {
   justify-content: center;
   padding: 20px;
   margin: 0 auto; }
+  .comingsoon-banner {
+    margin-bottom: -25px;
+    width: 180px; }
   .comingsoon-heading .h2 {
     font-size: 92px !important;
     font-size: 5.75rem !important;
@@ -349,10 +352,11 @@ object {
       color: #fff;
       margin-left: -20px; }
   .comingsoon-heading-supp {
-    font-size: 30px !important;
-    font-size: 1.875rem !important;
+    font-size: 22px !important;
+    font-size: 1.375rem !important;
     color: #fff;
     font-weight: 300;
+    margin: -40px auto 40px;
     text-align: center; }
   .comingsoon-signup {
     text-align: center; }
@@ -385,6 +389,8 @@ object {
 @media only screen and (max-width: 480px) {
   .comingsoon {
     padding: 10px; }
+    .comingsoon-banner {
+      margin-bottom: -15px; }
     .comingsoon-heading .h2 {
       font-size: 70px !important;
       font-size: 4.375rem !important; }
@@ -393,6 +399,7 @@ object {
       font-size: 1.375rem !important;
       color: #fff;
       font-weight: 300;
+      margin: -30px auto 40px;
       text-align: center; } }
 
 body {
