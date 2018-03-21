@@ -342,6 +342,10 @@ object {
     margin-bottom: -25px;
     width: 180px; }
   .comingsoon-heading .h2 {
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease;
     font-size: 92px !important;
     font-size: 5.75rem !important;
     color: #69bbc2;
@@ -352,11 +356,15 @@ object {
       color: #fff;
       margin-left: -20px; }
   .comingsoon-heading-supp {
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease;
     font-size: 22px !important;
     font-size: 1.375rem !important;
     color: #fff;
     font-weight: 300;
-    margin: -40px auto 40px;
+    margin: -40px auto 20px;
     text-align: center; }
   .comingsoon-signup {
     text-align: center; }
@@ -369,10 +377,16 @@ object {
   .comingsoon .email {
     font-size: 20px !important;
     font-size: 1.25rem !important;
-    padding: 8px;
+    border-radius: 3px;
+    border: 0;
+    padding: 10px;
     margin: 8px auto 5px;
     width: 100%; }
   .comingsoon .submit {
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease;
     font-size: 20px !important;
     font-size: 1.25rem !important;
     background: #d7becf;
@@ -386,6 +400,43 @@ object {
     .comingsoon .submit:hover, .comingsoon .submit:active {
       background: #69bbc2; }
 
+.social {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%; }
+  .social-icon {
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+    background-image: url("../images/socicons-sprite.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 100px;
+    width: 100px; }
+    .social-icon:hover {
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7); }
+  .social-facebook {
+    background-position: 0px 0px; }
+  .social-twitter {
+    background-position: -137px 0px; }
+  .social-instagram {
+    background-position: -276px 0px; }
+
 @media only screen and (max-width: 480px) {
   .comingsoon {
     padding: 10px; }
@@ -395,11 +446,11 @@ object {
       font-size: 70px !important;
       font-size: 4.375rem !important; }
     .comingsoon-heading-supp {
-      font-size: 22px !important;
-      font-size: 1.375rem !important;
+      font-size: 16px !important;
+      font-size: 1rem !important;
       color: #fff;
       font-weight: 300;
-      margin: -30px auto 40px;
+      margin: -30px auto 10px;
       text-align: center; } }
 
 body {
