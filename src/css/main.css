@@ -289,6 +289,15 @@ object {
   background: #69bbc2;
   padding: 5px; }
   .footer p {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     font-size: 14px !important;
     font-size: 0.875rem !important;
     color: #fff;
@@ -296,6 +305,41 @@ object {
     padding: 5px 10px; }
   .footer .heart {
     color: #f07a79; }
+  .footer .social {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .footer .social-icon {
+      -webkit-transition: 0.3s all ease;
+      -moz-transition: 0.3s all ease;
+      -ms-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+      -webkit-transform: scale(0.65);
+      -moz-transform: scale(0.65);
+      -ms-transform: scale(0.65);
+      transform: scale(0.65);
+      background-image: url("../images/socicons-sprite.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      height: 61px;
+      width: 60px; }
+      .footer .social-icon:hover {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7); }
+    .footer .social-facebook {
+      background-position: 0px 0px; }
+    .footer .social-twitter {
+      background-position: -82px 0px; }
+    .footer .social-instagram {
+      background-position: -166px 0px; }
 
 @media only screen and (max-width: 600px) {
   .footer {
@@ -399,43 +443,6 @@ object {
     width: 100%; }
     .comingsoon .submit:hover, .comingsoon .submit:active {
       background: #69bbc2; }
-
-.social {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%; }
-  .social-icon {
-    -webkit-transition: 0.3s all ease;
-    -moz-transition: 0.3s all ease;
-    -ms-transition: 0.3s all ease;
-    transition: 0.3s all ease;
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    transform: scale(0.6);
-    background-image: url("../images/socicons-sprite.png");
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 100px;
-    width: 100px; }
-    .social-icon:hover {
-      -webkit-transform: scale(0.7);
-      -moz-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-      transform: scale(0.7); }
-  .social-facebook {
-    background-position: 0px 0px; }
-  .social-twitter {
-    background-position: -137px 0px; }
-  .social-instagram {
-    background-position: -276px 0px; }
 
 @media only screen and (max-width: 480px) {
   .comingsoon {

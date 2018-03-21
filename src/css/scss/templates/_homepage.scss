@@ -80,36 +80,6 @@
 	}
 }
 
-.social {
-	@include flexbox(flex);
-	@include align-items(center);
-	@include justify-content(center);
-
-	width: 100%;
-	&-icon {
-		@include transition(0.3s all ease);
-		@include transform(scale(0.6));
-		background-image: url('../images/socicons-sprite.png');
-		background-repeat: no-repeat;
-		cursor: pointer;
-		height: 100px;
-		width: 100px;
-
-		&:hover {
-			@include transform(scale(0.7));
-		}
-	}
-	&-facebook {
-		background-position: 0px 0px;
-	}
-	&-twitter {
-		background-position: -137px 0px;
-	}
-	&-instagram {
-		background-position: -276px 0px;
-	}
-}
-
 @media only screen and (max-width: $break-sm) {
 	.comingsoon {
 		padding: 10px;

@@ -6,6 +6,9 @@
 	padding: 5px;
 
 	p {
+		@include flexbox(flex);
+		@include align-items(center);
+		@include justify-content(center);
 		@include font-size(14);
 		color: $white;
 		margin: 0;
@@ -14,6 +17,35 @@
 
 	.heart {
 		color: lighten($redpink, 10%);
+	}
+
+	.social {
+		@include flexbox(flex);
+		@include align-items(center);
+		@include justify-content(center);
+
+		&-icon {
+			@include transition(0.3s all ease);
+			@include transform(scale(0.65));
+			background-image: url('../images/socicons-sprite.png');
+			background-repeat: no-repeat;
+			cursor: pointer;
+			height: 61px;
+			width: 60px;
+
+			&:hover {
+				@include transform(scale(0.7));
+			}
+		}
+		&-facebook {
+			background-position: 0px 0px;
+		}
+		&-twitter {
+			background-position: -82px 0px;
+		}
+		&-instagram {
+			background-position: -166px 0px;
+		}
 	}
 }
 
