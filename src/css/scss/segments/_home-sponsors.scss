@@ -55,4 +55,8 @@
 			min-width: 15vw;
 		}
 	}
+
+	&-interest {
+		@include font-size(20);
+	}
 }

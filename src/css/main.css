@@ -473,6 +473,18 @@ object {
     -webkit-align-items: center;
     align-items: center; } }
 
+.home-event {
+  background: #353535;
+  min-height: 420px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%; }
+  .home-event-header {
+    font-size: 76px !important;
+    font-size: 4.75rem !important;
+    font-family: "Selima", Sans-serif !important;
+    color: #fff; }
+
 .home-info {
   min-height: 420px;
   padding: 30px 20px;
@@ -491,6 +503,8 @@ object {
     font-size: 1.25rem !important;
     max-width: 720px;
     margin: 0 auto 20px; }
+  .home-info-adjustment {
+    margin-left: -8px; }
 
 .home-sponsors {
   padding: 30px 20px;
@@ -563,6 +577,9 @@ object {
       min-height: 10vw;
       margin: 10px 30px;
       min-width: 15vw; }
+  .home-sponsors-interest {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; }
 
 .home-video {
   background: #2d3946;
@@ -574,7 +591,7 @@ object {
     font-size: 76px !important;
     font-size: 4.75rem !important;
     font-family: "Selima", Sans-serif !important;
-    color: #fff; }
+    color: #d7becf; }
 
 .comingsoon {
   display: -ms-flexbox;
