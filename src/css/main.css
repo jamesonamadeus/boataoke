@@ -172,13 +172,17 @@ html {
   box-sizing: inherit; }
 
 .btn {
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   border-radius: 5px;
-  background: transparent;
+  background: #69bbc2;
   border: 1px solid #4834d4;
-  color: #4834d4;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-size: 100%;
-  height: 44px;
   outline: none;
   padding: 0 25px;
   text-align: center;
@@ -233,6 +237,37 @@ html {
     display: block;
     margin-bottom: 10px;
     width: 100%; } }
+
+.hero {
+  background: url(../images/bg-lg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 560px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .hero h2 {
+    font-size: 72px !important;
+    font-size: 4.5rem !important;
+    color: #fff; }
+  .hero-cta {
+    font-size: 32px !important;
+    font-size: 2rem !important;
+    padding: 9px 25px 11px; }
+    .hero-cta:hover {
+      background: #d7becf; }
 
 img,
 video,
@@ -408,22 +443,9 @@ object {
     -webkit-align-items: center;
     align-items: center; } }
 
-.main {
-  background: url(../images/bg-lg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center; }
+.home-info {
+  min-height: 420px;
+  width: 100%; }
 
 .comingsoon {
   display: -ms-flexbox;
@@ -439,7 +461,8 @@ object {
   -webkit-justify-content: center;
   justify-content: center;
   padding: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
   .comingsoon-banner {
     margin-bottom: -25px;
     width: 180px; }

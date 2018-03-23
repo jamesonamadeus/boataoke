@@ -1,0 +1,27 @@
+.hero {
+	background: url(../images/bg-lg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 560px;
+	width: 100%;
+	@include flexbox(flex);
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+
+	h2 {
+		@include font-size(72);
+		color: $white;
+	}
+
+	&-cta {
+		@include font-size(32);
+		padding: 9px 25px 11px;
+
+		&:hover {
+			background: $style-3;
+		}
+	}
+}

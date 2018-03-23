@@ -1,13 +1,4 @@
 .main {
-	background: url(../images/bg-lg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100vh;
-	@include flexbox(flex);
-	@include align-items(center);
-	@include justify-content(center);
 }
 
 .comingsoon {
@@ -17,6 +8,7 @@
 	@include justify-content(center);
 	padding: 20px;
 	margin: 0 auto;
+	width: 100%;
 	&-banner {
 		margin-bottom: -25px;
 		width: 180px;

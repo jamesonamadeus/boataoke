@@ -1,12 +1,13 @@
 // Default button
 .btn {
+	@include transition(0.3s all ease);
 	border-radius: $btn-br;
-	background: transparent;
+	background: $style-1;
 	border: 1px solid $primary-color;
-	color: $primary-color;
+	color: $white;
+	cursor: pointer;
 	display: inline-block;
 	font-size: $font-size;
-	height: $line-height;
 	outline: none;
 	padding: 0 25px;
 	text-align: center;
