@@ -10,16 +10,16 @@
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
-
 	h2 {
-		@include font-size(72);
+		@include font-size(110);
+		font-family: $font-secondary;
 		color: $white;
+		text-align: center;
 	}
-
 	&-cta {
-		@include font-size(32);
-		padding: 9px 25px 11px;
-
+		@include font-size(28);
+		font-weight: 300;
+		padding: 14px 25px 16px;
 		&:hover {
 			background: $style-3;
 		}

@@ -150,6 +150,12 @@ a {
   ol {
     font-size: 14px; } }
 
+.colored {
+  color: #69bbc2; }
+
+.bold {
+  font-weight: bold; }
+
 .clearfix:after,
 .group:after {
   content: " ";
@@ -161,6 +167,27 @@ a {
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Selima';
+  src: url("Selima.eot");
+  src: url("Selima.eot?#iefix") format("embedded-opentype"), url("Selima.woff2") format("woff2"), url("Selima.woff") format("woff"), url("Selima.ttf") format("truetype"), url("Selima.svg#Selima") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'California';
+  src: url("California.eot");
+  src: url("California.eot?#iefix") format("embedded-opentype"), url("California.woff2") format("woff2"), url("California.woff") format("woff"), url("California.ttf") format("truetype"), url("California.svg#California") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Summer Hearts';
+  src: url("SummerHearts-Regular.eot");
+  src: url("SummerHearts-Regular.eot?#iefix") format("embedded-opentype"), url("SummerHearts-Regular.woff2") format("woff2"), url("SummerHearts-Regular.woff") format("woff"), url("SummerHearts-Regular.ttf") format("truetype"), url("SummerHearts-Regular.svg#SummerHearts-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -259,13 +286,16 @@ html {
   -webkit-justify-content: center;
   justify-content: center; }
   .hero h2 {
-    font-size: 72px !important;
-    font-size: 4.5rem !important;
-    color: #fff; }
+    font-size: 110px !important;
+    font-size: 6.875rem !important;
+    font-family: "Selima", Sans-serif;
+    color: #fff;
+    text-align: center; }
   .hero-cta {
-    font-size: 32px !important;
-    font-size: 2rem !important;
-    padding: 9px 25px 11px; }
+    font-size: 28px !important;
+    font-size: 1.75rem !important;
+    font-weight: 300;
+    padding: 14px 25px 16px; }
     .hero-cta:hover {
       background: #d7becf; }
 
@@ -445,7 +475,19 @@ object {
 
 .home-info {
   min-height: 420px;
+  padding: 20px;
+  text-align: center;
   width: 100%; }
+  .home-info-header {
+    font-size: 62px !important;
+    font-size: 3.875rem !important;
+    font-family: "Selima", Sans-serif;
+    color: #69bbc2; }
+  .home-info-content {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    max-width: 720px;
+    margin: 0 auto 20px; }
 
 .comingsoon {
   display: -ms-flexbox;
