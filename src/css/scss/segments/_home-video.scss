@@ -1,0 +1,13 @@
+.home-video {
+	background: $style-2;
+	color: $white;
+	min-height: 480px;
+	padding: 30px 20px;
+	text-align: center;
+
+	&-header {
+		@include font-size(76);
+		font-family: $font-secondary !important;
+		color: $white;
+	}
+}

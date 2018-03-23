@@ -1,0 +1,58 @@
+.home-sponsors {
+	padding: 30px 20px;
+	text-align: center;
+
+	&-header {
+		@include font-size(76);
+		font-family: $font-secondary !important;
+		color: $style-1;
+	}
+
+	&-tier1 {
+		@include transition(all 0.5s ease);
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(flex-start);
+		margin: 20px auto 50px;
+		width: 100%;
+
+		&-box {
+			background: $style-1;
+			min-height: 20vw;
+			margin: 0 30px;
+			min-width: 30vw;
+		}
+	}
+
+	&-tier2 {
+		@include transition(all 0.5s ease);
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(flex-start);
+		margin: 20px auto 50px;
+		width: 100%;
+
+		&-box {
+			background: $style-2;
+			min-height: 16vw;
+			margin: 10px 30px;
+			min-width: 24vw;
+		}
+	}
+
+	&-tier3 {
+		@include transition(all 0.5s ease);
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(flex-start);
+		margin: 20px auto 50px;
+		width: 100%;
+
+		&-box {
+			background: $style-3;
+			min-height: 10vw;
+			margin: 10px 30px;
+			min-width: 15vw;
+		}
+	}
+}

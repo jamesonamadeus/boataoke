@@ -51,7 +51,7 @@ body {
   line-height: 1.6; }
 
 blockquote {
-  border-left: 2px solid #4834d4;
+  border-left: 2px solid #69bbc2;
   font-family: Georgia, Times, 'Times New Roman', serif;
   font-size: 1.4em;
   font-style: italic;
@@ -124,7 +124,7 @@ code {
   word-wrap: break-word; }
 
 a {
-  color: #4834d4; }
+  color: #69bbc2; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -205,7 +205,7 @@ html {
   transition: 0.3s all ease;
   border-radius: 5px;
   background: #69bbc2;
-  border: 1px solid #4834d4;
+  border: 1px solid #69bbc2;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -216,25 +216,25 @@ html {
   text-decoration: none;
   text-transform: capitalize; }
   .btn:hover, .btn:focus {
-    background: #4834d4;
-    border-color: #4834d4;
+    background: #69bbc2;
+    border-color: #69bbc2;
     color: #fff;
     text-decoration: none; }
   .btn:active {
-    background: #3725b0;
-    border-color: #3725b0; }
+    background: #48a8b0;
+    border-color: #48a8b0; }
 
 .btn-primary {
-  background-color: #4834d4;
-  border-color: #4834d4;
+  background-color: #69bbc2;
+  border-color: #69bbc2;
   color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #3d2ac5;
-    border-color: #3d2ac5;
+    background: #57b3bb;
+    border-color: #57b3bb;
     color: #fff; }
   .btn-primary:active {
-    background: #3725b0;
-    border-color: #3725b0;
+    background: #48a8b0;
+    border-color: #48a8b0;
     color: #fff; }
 
 .btn-lg {
@@ -251,12 +251,12 @@ html {
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: #4834d4;
+  color: #69bbc2;
   text-shadow: none;
   text-transform: none; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
-    color: #4834d4;
+    color: #69bbc2;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -475,19 +475,106 @@ object {
 
 .home-info {
   min-height: 420px;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
   width: 100%; }
   .home-info-header {
-    font-size: 62px !important;
-    font-size: 3.875rem !important;
-    font-family: "Selima", Sans-serif;
+    font-size: 76px !important;
+    font-size: 4.75rem !important;
+    font-family: "Selima", Sans-serif !important;
     color: #69bbc2; }
+  .home-info-subheader {
+    font-size: 36px !important;
+    font-size: 2.25rem !important; }
   .home-info-content {
     font-size: 20px !important;
     font-size: 1.25rem !important;
     max-width: 720px;
     margin: 0 auto 20px; }
+
+.home-sponsors {
+  padding: 30px 20px;
+  text-align: center; }
+  .home-sponsors-header {
+    font-size: 76px !important;
+    font-size: 4.75rem !important;
+    font-family: "Selima", Sans-serif !important;
+    color: #69bbc2; }
+  .home-sponsors-tier1 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    margin: 20px auto 50px;
+    width: 100%; }
+    .home-sponsors-tier1-box {
+      background: #69bbc2;
+      min-height: 20vw;
+      margin: 0 30px;
+      min-width: 30vw; }
+  .home-sponsors-tier2 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    margin: 20px auto 50px;
+    width: 100%; }
+    .home-sponsors-tier2-box {
+      background: #2d3946;
+      min-height: 16vw;
+      margin: 10px 30px;
+      min-width: 24vw; }
+  .home-sponsors-tier3 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    margin: 20px auto 50px;
+    width: 100%; }
+    .home-sponsors-tier3-box {
+      background: #d7becf;
+      min-height: 10vw;
+      margin: 10px 30px;
+      min-width: 15vw; }
+
+.home-video {
+  background: #2d3946;
+  color: #fff;
+  min-height: 480px;
+  padding: 30px 20px;
+  text-align: center; }
+  .home-video-header {
+    font-size: 76px !important;
+    font-size: 4.75rem !important;
+    font-family: "Selima", Sans-serif !important;
+    color: #fff; }
 
 .comingsoon {
   display: -ms-flexbox;

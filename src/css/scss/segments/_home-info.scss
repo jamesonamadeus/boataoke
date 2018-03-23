@@ -1,13 +1,17 @@
 .home-info {
 	min-height: 420px;
-	padding: 20px;
+	padding: 30px 20px;
 	text-align: center;
 	width: 100%;
 
 	&-header {
-		@include font-size(62);
-		font-family: $font-secondary;
+		@include font-size(76);
+		font-family: $font-secondary !important;
 		color: $style-1;
+	}
+
+	&-subheader {
+		@include font-size(36);
 	}
 
 	&-content {
