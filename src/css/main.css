@@ -396,7 +396,7 @@ object {
     background: transparent; }
   .banner--scroll {
     background: #2d3946;
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #69bbc2; }
 
 @media only screen and (max-width: 400px) {
   .banner {
