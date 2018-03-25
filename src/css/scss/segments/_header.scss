@@ -3,7 +3,7 @@
 	@include flexbox(flex);
 	@include justify-content(space-between);
 	@include align-items(center);
-	background: transparent;
+	// background: transparent;
 	padding: 0 20px;
 	position: fixed;
 	top: 0;
@@ -16,10 +16,19 @@
 			margin: 0;
 		}
 
-		&-main {
+		&-img {
 			margin: 14px 10px 0;
 			width: 180px;
 		}
+	}
+
+	&--top {
+		background: transparent;
+	}
+
+	&--scroll {
+		background: $style-2;
+		border-bottom: 1px solid $white;
 	}
 }
 

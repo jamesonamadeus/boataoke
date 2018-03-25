@@ -290,14 +290,17 @@ html {
     font-size: 6.875rem !important;
     font-family: "Selima", Sans-serif;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 2px 2px 1px #d7becf; }
   .hero-cta {
     font-size: 28px !important;
     font-size: 1.75rem !important;
+    border: 1px solid #fff;
     font-weight: 300;
     padding: 14px 25px 16px; }
     .hero-cta:hover {
-      background: #d7becf; }
+      background: #d7becf;
+      border: 1px solid #fff; }
 
 img,
 video,
@@ -377,7 +380,6 @@ object {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background: transparent;
   padding: 0 20px;
   position: fixed;
   top: 0;
@@ -387,9 +389,14 @@ object {
     font-size: 28px !important;
     font-size: 1.75rem !important;
     margin: 0; }
-  .banner .logo-main {
+  .banner .logo-img {
     margin: 14px 10px 0;
     width: 180px; }
+  .banner--top {
+    background: transparent; }
+  .banner--scroll {
+    background: #2d3946;
+    border-bottom: 1px solid #fff; }
 
 @media only screen and (max-width: 400px) {
   .banner {
