@@ -1,0 +1,66 @@
+.experience {
+	&-hero {
+		min-height: 320px !important;
+
+		h2 {
+			margin: 0 auto !important;
+		}
+	}
+
+	&-info,
+	&-event,
+	&-venue {
+		padding: 30px 20px;
+		text-align: center;
+		width: 100%;
+
+		&-content {
+			@include font-size(20);
+		}
+	}
+
+	&-info {
+		background: $white;
+
+		&-content {
+			max-width: 720px;
+			margin: 0 auto 20px;
+		}
+	}
+
+	&-event {
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		background: $style-2;
+
+		&-header {
+			@include font-size(76);
+			font-family: $font-secondary !important;
+			color: $style-1;
+		}
+
+		&-image {
+			background: $style-3;
+			height: 400px;
+			width: 40%;
+		}
+
+		&-info {
+			padding: 30px;
+			width: 60%;
+		}
+
+		&-content {
+			color: $white !important;
+			margin: 0 auto 20px;
+			text-align: left;
+		}
+
+		ul > li {
+			@include font-size(20);
+			color: $white !important;
+			text-align: left;
+		}
+	}
+}

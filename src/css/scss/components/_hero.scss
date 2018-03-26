@@ -11,7 +11,7 @@
 	@include align-items(center);
 	@include justify-content(center);
 	h2 {
-		@include font-size(110);
+		@include font-size(82);
 		font-family: $font-secondary;
 		color: $white;
 		text-align: center;

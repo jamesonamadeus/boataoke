@@ -286,8 +286,8 @@ html {
   -webkit-justify-content: center;
   justify-content: center; }
   .hero h2 {
-    font-size: 110px !important;
-    font-size: 6.875rem !important;
+    font-size: 82px !important;
+    font-size: 5.125rem !important;
     font-family: "Selima", Sans-serif;
     color: #fff;
     text-align: center;
@@ -599,6 +599,58 @@ object {
     font-size: 4.75rem !important;
     font-family: "Selima", Sans-serif !important;
     color: #d7becf; }
+
+.experience-hero {
+  min-height: 320px !important; }
+  .experience-hero h2 {
+    margin: 0 auto !important; }
+
+.experience-info, .experience-event, .experience-venue {
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%; }
+  .experience-info-content, .experience-event-content, .experience-venue-content {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; }
+
+.experience-info {
+  background: #fff; }
+  .experience-info-content {
+    max-width: 720px;
+    margin: 0 auto 20px; }
+
+.experience-event {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #2d3946; }
+  .experience-event-header {
+    font-size: 76px !important;
+    font-size: 4.75rem !important;
+    font-family: "Selima", Sans-serif !important;
+    color: #69bbc2; }
+  .experience-event-image {
+    background: #d7becf;
+    height: 400px;
+    width: 40%; }
+  .experience-event-info {
+    padding: 30px;
+    width: 60%; }
+  .experience-event-content {
+    color: #fff !important;
+    margin: 0 auto 20px;
+    text-align: left; }
+  .experience-event ul > li {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    color: #fff !important;
+    text-align: left; }
 
 .comingsoon {
   display: -ms-flexbox;
