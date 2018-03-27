@@ -651,10 +651,31 @@ object {
     color: #fff !important;
     margin: 0 auto 20px;
     text-align: left; }
-  .experience-event ul > li {
-    font-size: 20px !important;
-    font-size: 1.25rem !important;
-    color: #fff !important;
+
+.experience-venue {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .experience-venue-header {
+    font-size: 76px !important;
+    font-size: 4.75rem !important;
+    font-family: "Selima", Sans-serif !important;
+    color: #69bbc2; }
+  .experience-venue-map {
+    background: #67beb2;
+    height: 400px;
+    width: 40%; }
+  .experience-venue-info {
+    padding: 30px;
+    width: 60%; }
+  .experience-venue-content {
+    margin: 0 auto 20px;
     text-align: left; }
 
 .comingsoon {

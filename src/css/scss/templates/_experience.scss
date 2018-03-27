@@ -56,10 +56,32 @@
 			margin: 0 auto 20px;
 			text-align: left;
 		}
+	}
 
-		ul > li {
-			@include font-size(20);
-			color: $white !important;
+	&-venue {
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(center);
+
+		&-header {
+			@include font-size(76);
+			font-family: $font-secondary !important;
+			color: $style-1;
+		}
+
+		&-map {
+			background: $style-5;
+			height: 400px;
+			width: 40%;
+		}
+
+		&-info {
+			padding: 30px;
+			width: 60%;
+		}
+
+		&-content {
+			margin: 0 auto 20px;
 			text-align: left;
 		}
 	}
