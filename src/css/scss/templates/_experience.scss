@@ -32,7 +32,7 @@
 		@include flexbox(flex);
 		@include justify-content(center);
 		@include align-items(center);
-		background: $style-2;
+		background: $style-4;
 
 		&-header {
 			@include font-size(76);
