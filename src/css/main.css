@@ -605,6 +605,11 @@ object {
   .beneficiary-hero h2 {
     margin: 0 auto !important; }
 
+.contact-hero {
+  min-height: 320px !important; }
+  .contact-hero h2 {
+    margin: 0 auto !important; }
+
 .experience-hero {
   min-height: 320px !important; }
   .experience-hero h2 {
