@@ -600,6 +600,11 @@ object {
     font-family: "Selima", Sans-serif !important;
     color: #d7becf; }
 
+.beneficiary-hero {
+  min-height: 320px !important; }
+  .beneficiary-hero h2 {
+    margin: 0 auto !important; }
+
 .experience-hero {
   min-height: 320px !important; }
   .experience-hero h2 {
