@@ -6,4 +6,24 @@
 			margin: 0 auto !important;
 		}
 	}
+
+	&-list {
+		padding: 30px 20px;
+
+		h3 {
+			@include font-size(24);
+			font-weight: bold;
+			margin: 0 auto;
+		}
+
+		ul {
+			padding-left: 0;
+			margin: 10px auto 40px;
+		}
+
+		li {
+			@include font-size(20);
+			list-style: none;
+		}
+	}
 }
