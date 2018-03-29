@@ -728,27 +728,25 @@ object {
     -moz-transition: 0.3s all ease;
     -ms-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    font-size: 82px !important;
-    font-size: 5.125rem !important;
-    font-family: "Selima", Sans-serif;
-    text-shadow: 2px 2px 1px #69bbc2;
-    color: #fff;
+    font-size: 102px !important;
+    font-size: 6.375rem !important;
+    color: #69bbc2;
     font-weight: 500;
-    margin: 30px auto 20px;
+    margin: 20px auto 0;
     text-align: center; }
     .comingsoon-heading .h2-inside {
       color: #fff;
-      margin-left: -20px; }
+      margin-left: -24px; }
   .comingsoon-heading-supp {
     -webkit-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
     -ms-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    font-size: 22px !important;
-    font-size: 1.375rem !important;
+    font-size: 30px !important;
+    font-size: 1.875rem !important;
     color: #fff;
     font-weight: 300;
-    margin: -40px auto 20px;
+    margin: -45px auto 40px;
     text-align: center; }
   .comingsoon-signup {
     text-align: center; }
@@ -826,15 +824,28 @@ object {
     .comingsoon-banner {
       margin-bottom: -15px; }
     .comingsoon-heading .h2 {
-      font-size: 54px !important;
-      font-size: 3.375rem !important; }
+      font-size: 76px !important;
+      font-size: 4.75rem !important; }
+      .comingsoon-heading .h2-inside {
+        margin-left: -19px; }
     .comingsoon-heading-supp {
-      font-size: 16px !important;
-      font-size: 1rem !important;
+      font-size: 22px !important;
+      font-size: 1.375rem !important;
       color: #fff;
       font-weight: 300;
-      margin: -30px auto 10px;
+      margin: -30px auto 30px;
       text-align: center; } }
+
+@media only screen and (max-width: 360px) {
+  .comingsoon-heading .h2 {
+    font-size: 70px !important;
+    font-size: 4.375rem !important; }
+    .comingsoon-heading .h2-inside {
+      margin-left: -18px; }
+  .comingsoon-heading-supp {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    margin: -27px auto 30px; } }
 
 body {
   margin: 0; }

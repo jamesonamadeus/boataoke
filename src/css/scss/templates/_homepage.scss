@@ -20,27 +20,29 @@
 		margin-bottom: -25px;
 		width: 180px;
 	}
+
 	&-heading {
 		.h2 {
 			@include transition(0.3s all ease);
-			@include font-size(82);
-			font-family: $font-secondary;
-			text-shadow: 2px 2px 1px $style-1;
-			color: $white;
+			@include font-size(102);
+			// text-shadow: 2px 2px 1px $style-1;
+			color: $style-1;
 			font-weight: 500;
-			margin: 30px auto 20px;
+			margin: 20px auto 0;
 			text-align: center;
+
 			&-inside {
 				color: $white;
-				margin-left: -20px;
+				margin-left: -24px;
 			}
 		}
+
 		&-supp {
 			@include transition(0.3s all ease);
-			@include font-size(22);
+			@include font-size(30);
 			color: $white;
 			font-weight: 300;
-			margin: -40px auto 20px;
+			margin: -45px auto 40px;
 			text-align: center;
 		}
 	}
@@ -119,14 +121,37 @@
 		}
 		&-heading {
 			.h2 {
-				@include font-size(54);
+				@include font-size(76);
+
+				&-inside {
+					margin-left: -19px;
+				}
 			}
+
 			&-supp {
-				@include font-size(16);
+				@include font-size(22);
 				color: $white;
 				font-weight: 300;
-				margin: -30px auto 10px;
+				margin: -30px auto 30px;
 				text-align: center;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.comingsoon {
+		&-heading {
+			.h2 {
+				@include font-size(70);
+				&-inside {
+					margin-left: -18px;
+				}
+			}
+
+			&-supp {
+				@include font-size(20);
+				margin: -27px auto 30px;
 			}
 		}
 	}
