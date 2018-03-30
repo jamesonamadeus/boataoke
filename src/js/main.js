@@ -1,14 +1,13 @@
 //Change Navbar Background on Scroll
 window.onscroll = function() {
-	var bnr = document.querySelector('#banner');
-	// var newLogo = (document.getElementById('logo-img').src = '../images/boataoke_black.png');
+	var bnr = document.querySelector('#banner-nav');
 
-	if (window.pageYOffset >= 450) {
-		bnr.classList.add('banner--scroll');
-		bnr.classList.remove('banner--top');
+	if (window.pageYOffset >= 400) {
+		bnr.classList.add('banner-nav--scroll');
+		bnr.classList.remove('banner-nav--top');
 	} else {
-		bnr.classList.add('banner--top');
-		bnr.classList.remove('banner--scroll');
+		bnr.classList.add('banner-nav--top');
+		bnr.classList.remove('banner-nav--scroll');
 	}
 };
 
