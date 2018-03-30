@@ -7,7 +7,7 @@
 	}
 
 	&-item {
-		color: $white;
+		color: lighten($black, 20%);
 		list-style: none;
 		margin: 0 10px;
 		cursor: pointer;
@@ -23,9 +23,8 @@
 	&-link {
 		@include transition(0.3s all ease);
 		@include font-size(18);
-		color: $white;
+		color: lighten($black, 20%);
 		padding: 15px 20px;
-		text-shadow: 1px 1px 1px $style-1;
 		text-decoration: none;
 		text-align: center;
 	}
