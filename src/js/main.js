@@ -3,7 +3,7 @@ window.onscroll = function() {
 	var bnr = document.querySelector('#banner');
 	// var newLogo = (document.getElementById('logo-img').src = '../images/boataoke_black.png');
 
-	if (window.pageYOffset >= 50) {
+	if (window.pageYOffset >= 450) {
 		bnr.classList.add('banner--scroll');
 		bnr.classList.remove('banner--top');
 	} else {
