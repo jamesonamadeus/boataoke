@@ -4,18 +4,20 @@ $btn-br: 5px; // Button border-radius
 $font-size: 100%; // Global default font size
 $padding: 40px; // Padding and margins
 $line-height: 44px; // Consistent height for buttons, inputs etc.
-$system-font-stack: 'Roboto', sans-serif; // System fonts
-
+$system-font-stack: 'Roboto',
+sans-serif; // System fonts
 // Responsive breakpoints
 $break-sm: 480px;
 $break-med: 600px;
 $break-lg: 800px;
 $break-xlg: 1000px;
-
 // Font Family
-$font-primary: 'Roboto', Sans-serif;
-$font-secondary: 'Selima', Sans-serif;
-
+$font-primary: 'Roboto',
+Sans-serif;
+$font-secondary: 'Selima',
+Sans-serif;
+$font-teritary: 'California',
+Sans-serif;
 // Cool
 $darkpurple: #130f40;
 $bluepurple: #686de0;
@@ -24,7 +26,6 @@ $bluegreen: #22a6b3;
 $teal: #7ed6df;
 $green: #6ab04c;
 $lime: #badc58;
-
 // Warm
 $redpink: #eb4d4b;
 $pink: #ff7979;
@@ -32,25 +33,21 @@ $orange: #f0932b;
 $tang: #f9ca24;
 $pinkpurple: #e056fd;
 $purple: #be2edd;
-
 // Gray Scale
 $white: #fff;
 $silver: #ddd;
 $grey: #aaa;
 $black: #111;
-
 // Theme Colors
 $style-1: #69bbc2;
 $style-2: #2d3946;
 $style-3: #d7becf;
 $style-4: #353535;
 $style-5: #67beb2;
-
 // Project color variables
 $primary-color: $style-1;
 $secondary-color: $teal;
 $tertiary-color: $tang;
-
 $danger-color: $redpink; // Bad color for errors, validation etc.
 $success-color: $green; // Good color for success etc.
 $info-color: $blue; // Good color for success etc.

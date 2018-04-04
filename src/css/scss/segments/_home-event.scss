@@ -1,13 +1,33 @@
 .home-event {
-	background: $style-4;
-	min-height: 420px;
-	padding: 30px 20px;
-	text-align: center;
-	width: 100%;
-
-	&-header {
-		@include font-size(76);
-		font-family: $font-secondary !important;
-		color: $white;
-	}
+    background: $white;
+    min-height: 420px;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    &-header {
+        @include font-size(76);
+        font-family: $font-secondary !important;
+        color: $style-1;
+    }
+    &-container {
+        @include transition(all 0.5s ease);
+        @include flexbox(flex);
+        @include align-items(center);
+    }
+    &-box {
+        min-height: 250px;
+        width: 25%;
+        &-jun {
+            background: $style-1;
+        }
+        &-jul {
+            background: $style-2;
+        }
+        &-aug {
+            background: $style-3;
+        }
+        &-sept {
+            background: $style-4;
+        }
+    }
 }

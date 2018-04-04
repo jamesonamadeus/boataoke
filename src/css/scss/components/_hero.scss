@@ -1,38 +1,35 @@
 .hero {
-	background: url(../images/hero-bg-lg.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	min-height: 400px;
-	width: 100%;
-	@include flexbox(flex);
-	@include flex-direction(column);
-	@include align-items(center);
-	@include justify-content(center);
-	position: relative;
-
-	h2 {
-		@include font-size(48);
-		font-family: $font-secondary;
-		color: $white;
-		text-align: center;
-		text-shadow: 2px 2px 1px $style-1;
-		margin: 0 auto 5px;
-	}
-
-	&-logo {
-		max-width: 480px;
-	}
-
-	&-cta {
-		@include font-size(24);
-		border: 1px solid $white;
-		font-weight: 300;
-		padding: 12px 22px 14px;
-		&:hover {
-			background: $style-3;
-			border: 1px solid $white;
-		}
-	}
+    background: url(../images/hero-bg-lg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    @include flexbox(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    position: relative;
+    h2 {
+        @include font-size(96);
+        font-family: $font-secondary;
+        color: $white;
+        text-align: center;
+        text-shadow: 2px 2px 1px $style-1;
+        margin: 0 auto 5px;
+    }
+    &-logo {
+        max-width: 480px;
+    }
+    &-cta {
+        @include font-size(24);
+        border: 1px solid $white;
+        font-weight: 300;
+        padding: 12px 22px 14px;
+        &:hover {
+            background: $style-3;
+            border: 1px solid $white;
+        }
+    }
 }

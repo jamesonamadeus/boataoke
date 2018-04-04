@@ -287,8 +287,8 @@ html {
   justify-content: center;
   position: relative; }
   .hero h2 {
-    font-size: 48px !important;
-    font-size: 3rem !important;
+    font-size: 96px !important;
+    font-size: 6rem !important;
     font-family: "Selima", Sans-serif;
     color: #fff;
     text-align: center;
@@ -511,16 +511,38 @@ object {
     align-items: center; } }
 
 .home-event {
-  background: #353535;
+  background: #fff;
   min-height: 420px;
-  padding: 30px 20px;
+  padding: 30px 0;
   text-align: center;
   width: 100%; }
   .home-event-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
     font-family: "Selima", Sans-serif !important;
-    color: #fff; }
+    color: #69bbc2; }
+  .home-event-container {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+  .home-event-box {
+    min-height: 250px;
+    width: 25%; }
+    .home-event-box-jun {
+      background: #69bbc2; }
+    .home-event-box-jul {
+      background: #2d3946; }
+    .home-event-box-aug {
+      background: #d7becf; }
+    .home-event-box-sept {
+      background: #353535; }
 
 .home-info {
   min-height: 420px;
@@ -664,8 +686,12 @@ object {
 .experience-info {
   background: #fff; }
   .experience-info-content {
+    font-size: 42px !important;
+    font-size: 2.625rem !important;
+    font-family: "California", Sans-serif !important;
     max-width: 720px;
-    margin: 0 auto 20px; }
+    margin: 0 auto 20px;
+    text-transform: uppercase; }
 
 .experience-event {
   display: -ms-flexbox;
@@ -704,7 +730,8 @@ object {
   justify-content: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center; }
+  align-items: center;
+  background: #2d3946; }
   .experience-venue-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
@@ -715,6 +742,7 @@ object {
     height: 400px;
     width: 40%; }
   .experience-venue-info {
+    color: #fff;
     padding: 30px;
     width: 60%; }
   .experience-venue-content {
