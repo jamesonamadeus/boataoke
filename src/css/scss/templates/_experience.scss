@@ -1,78 +1,82 @@
 .experience {
-    &-hero {
-        min-height: 320px !important;
-        h2 {
-            margin: 0 auto !important;
-        }
-    }
-    &-info,
-    &-event,
-    &-venue {
-        padding: 30px 20px;
-        text-align: center;
-        width: 100%;
-        &-content {
-            @include font-size(20);
-        }
-    }
-    &-info {
-        background: $white;
-        &-content {
-            @include font-size (42);
-            font-family: $font-teritary !important;
-            max-width: 720px;
-            margin: 0 auto 20px;
-            text-transform: uppercase;
-        }
-    }
-    &-event {
-        @include flexbox(flex);
-        @include justify-content(center);
-        @include align-items(center);
-        background: $style-4;
-        &-header {
-            @include font-size(76);
-            font-family: $font-secondary !important;
-            color: $style-1;
-        }
-        &-image {
-            background: $style-3;
-            height: 400px;
-            width: 40%;
-        }
-        &-info {
-            padding: 30px;
-            width: 60%;
-        }
-        &-content {
-            color: $white !important;
-            margin: 0 auto 20px;
-            text-align: left;
-        }
-    }
-    &-venue {
-        @include flexbox(flex);
-        @include justify-content(center);
-        @include align-items(center);
-        background: $style-2;
-        &-header {
-            @include font-size(76);
-            font-family: $font-secondary !important;
-            color: $style-1;
-        }
-        &-map {
-            background: $style-5;
-            height: 400px;
-            width: 40%;
-        }
-        &-info {
-            color: $white;
-            padding: 30px;
-            width: 60%;
-        }
-        &-content {
-            margin: 0 auto 20px;
-            text-align: left;
-        }
-    }
+	&-hero {
+		min-height: 320px !important;
+		h2 {
+			margin: 0 auto !important;
+		}
+	}
+	&-info,
+	&-event,
+	&-venue {
+		padding: 30px 20px;
+		text-align: center;
+		width: 100%;
+		&-content {
+			@include font-size(20);
+		}
+	}
+	&-info {
+		background: $white;
+		&-content {
+			@include font-size(42);
+			font-family: $font-teritary !important;
+			max-width: 720px;
+			margin: 0 auto 20px;
+			text-transform: uppercase;
+		}
+	}
+	&-event {
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		background: $style-4;
+		&-header {
+			@include font-size(76);
+			font-family: $font-secondary !important;
+			color: $style-1;
+		}
+		&-image {
+			background: $style-3;
+			height: 400px;
+			width: 40%;
+		}
+		&-info {
+			padding: 30px;
+			width: 60%;
+		}
+		&-content {
+			color: $white !important;
+			margin: 0 auto 20px;
+			text-align: left;
+		}
+	}
+	&-venue {
+		@include flexbox(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		background: $style-2;
+
+		&-header {
+			@include font-size(76);
+			font-family: $font-secondary !important;
+			color: $style-1;
+		}
+
+		&-map {
+			background: $style-5;
+			height: 400px;
+			width: 40%;
+		}
+
+		&-info {
+			color: $white;
+			padding: 30px;
+			width: 60%;
+		}
+
+		&-content {
+			margin: 0 auto 20px;
+			text-align: left;
+		}
+	}
 }
