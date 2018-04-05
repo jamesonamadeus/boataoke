@@ -29,4 +29,9 @@
 	&-interest {
 		@include font-size(20);
 	}
+
+	&-logo {
+		max-width: 720px;
+		width: 100%;
+	}
 }

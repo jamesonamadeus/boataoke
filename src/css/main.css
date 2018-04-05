@@ -533,16 +533,41 @@ object {
     -webkit-align-items: center;
     align-items: center; }
   .home-event-box {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
     min-height: 250px;
-    width: 25%; }
+    width: 25%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-decoration: none; }
+    .home-event-box-filter {
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: auto;
+      top: 0px;
+      left: 0px; }
+      .home-event-box-filter p {
+        font-size: 24px !important;
+        font-size: 1.5rem !important;
+        color: #fff;
+        font-weight: 500;
+        margin: 0; }
     .home-event-box-jun {
-      background: #69bbc2; }
+      background: linear-gradient(rgba(105, 187, 194, 0.7), rgba(105, 187, 194, 0.7)), url(../images/upcoming-event_1.jpg) no-repeat center center; }
     .home-event-box-jul {
-      background: #2d3946; }
+      background: linear-gradient(rgba(45, 57, 70, 0.7), rgba(45, 57, 70, 0.7)), url(../images/upcoming-event_2.jpg) no-repeat center center; }
     .home-event-box-aug {
-      background: #d7becf; }
+      background: linear-gradient(rgba(170, 170, 170, 0.8), rgba(170, 170, 170, 0.8)), url(../images/upcoming-event_3.jpg) no-repeat center center; }
     .home-event-box-sept {
-      background: #353535; }
+      background: linear-gradient(rgba(215, 190, 207, 0.7), rgba(215, 190, 207, 0.7)), url(../images/upcoming-event_4.jpg) no-repeat center center; }
 
 .home-info {
   min-height: 420px;
@@ -573,7 +598,7 @@ object {
     font-size: 4.75rem !important;
     font-family: "Selima", Sans-serif !important;
     color: #69bbc2; }
-  .home-sponsors-tier1 {
+  .home-sponsors-tier {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -589,11 +614,14 @@ object {
     align-items: flex-start;
     margin: 20px auto 50px;
     width: 100%; }
-    .home-sponsors-tier1-box {
+    .home-sponsors-tier-box {
       background: #2d3946;
       min-height: 16vw;
       margin: 10px 30px;
       min-width: 24vw; }
+  .home-sponsors-logos {
+    margin: 20px 30px;
+    width: 28%; }
   .home-sponsors-interest {
     font-size: 20px !important;
     font-size: 1.25rem !important; }
@@ -632,6 +660,9 @@ object {
   .home-beneficiary-interest {
     font-size: 20px !important;
     font-size: 1.25rem !important; }
+  .home-beneficiary-logo {
+    max-width: 720px;
+    width: 100%; }
 
 .home-video {
   background: #2d3946;

@@ -1,33 +1,65 @@
 .home-event {
-    background: $white;
-    min-height: 420px;
-    padding: 30px 0;
-    text-align: center;
-    width: 100%;
-    &-header {
-        @include font-size(76);
-        font-family: $font-secondary !important;
-        color: $style-1;
-    }
-    &-container {
-        @include transition(all 0.5s ease);
-        @include flexbox(flex);
-        @include align-items(center);
-    }
-    &-box {
-        min-height: 250px;
-        width: 25%;
-        &-jun {
-            background: $style-1;
-        }
-        &-jul {
-            background: $style-2;
-        }
-        &-aug {
-            background: $style-3;
-        }
-        &-sept {
-            background: $style-4;
-        }
-    }
+	background: $white;
+	min-height: 420px;
+	padding: 30px 0;
+	text-align: center;
+	width: 100%;
+	&-header {
+		@include font-size(76);
+		font-family: $font-secondary !important;
+		color: $style-1;
+	}
+	&-container {
+		@include transition(all 0.5s ease);
+		@include flexbox(flex);
+		@include align-items(center);
+	}
+	&-box {
+		@include flexbox(flex);
+		@include align-items(center);
+		min-height: 250px;
+		width: 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		text-decoration: none;
+
+		&-filter {
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			position: relative;
+			overflow: auto;
+			top: 0px;
+			left: 0px;
+
+			p {
+				@include font-size(24);
+				color: $white;
+				font-weight: 500;
+				margin: 0;
+			}
+		}
+
+		&-jun {
+			background: linear-gradient(rgba(105, 187, 194, 0.7), rgba(105, 187, 194, 0.7)),
+				url(../images/upcoming-event_1.jpg) no-repeat center center;
+		}
+
+		&-jul {
+			background: linear-gradient(rgba(45, 57, 70, 0.7), rgba(45, 57, 70, 0.7)),
+				url(../images/upcoming-event_2.jpg) no-repeat center center;
+		}
+
+		&-aug {
+			background: linear-gradient(rgba(170, 170, 170, 0.8), rgba(170, 170, 170, 0.8)),
+				url(../images/upcoming-event_3.jpg) no-repeat center center;
+		}
+
+		&-sept {
+			background: linear-gradient(rgba(215, 190, 207, 0.7), rgba(215, 190, 207, 0.7)),
+				url(../images/upcoming-event_4.jpg) no-repeat center center;
+		}
+	}
 }
