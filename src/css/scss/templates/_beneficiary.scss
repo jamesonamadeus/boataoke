@@ -7,23 +7,44 @@
 		}
 	}
 
-	&-list {
+	&-info {
+		@include flexbox(flex);
+		@include align-items(flex-start);
+		@include justify-content(flex-start);
 		padding: 30px 20px;
+	}
+
+	&-content {
+		background: $style-2;
+		border-radius: 5px;
+		color: $white;
+		margin-right: 30px;
+		padding: 20px;
+		width: 55%;
 
 		h3 {
 			@include font-size(24);
+			color: $style-3;
 			font-weight: bold;
 			margin: 0 auto;
 		}
 
-		ul {
-			padding-left: 0;
-			margin: 10px auto 40px;
-		}
-
-		li {
+		p {
 			@include font-size(20);
-			list-style: none;
 		}
+	}
+
+	&-image {
+		background: $style-3;
+		padding: 20px;
+		border-radius: 5px;
+		width: 45%;
+	}
+
+	&-img {
+		display: block;
+		border-radius: 5px;
+		max-width: 720px;
+		width: 100%;
 	}
 }

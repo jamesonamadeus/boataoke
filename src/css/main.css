@@ -681,20 +681,46 @@ object {
   .beneficiary-hero h2 {
     margin: 0 auto !important; }
 
-.beneficiary-list {
+.beneficiary-info {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   padding: 30px 20px; }
-  .beneficiary-list h3 {
+
+.beneficiary-content {
+  background: #2d3946;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 30px;
+  padding: 20px;
+  width: 55%; }
+  .beneficiary-content h3 {
     font-size: 24px !important;
     font-size: 1.5rem !important;
+    color: #d7becf;
     font-weight: bold;
     margin: 0 auto; }
-  .beneficiary-list ul {
-    padding-left: 0;
-    margin: 10px auto 40px; }
-  .beneficiary-list li {
+  .beneficiary-content p {
     font-size: 20px !important;
-    font-size: 1.25rem !important;
-    list-style: none; }
+    font-size: 1.25rem !important; }
+
+.beneficiary-image {
+  background: #d7becf;
+  padding: 20px;
+  border-radius: 5px;
+  width: 45%; }
+
+.beneficiary-img {
+  display: block;
+  border-radius: 5px;
+  max-width: 720px;
+  width: 100%; }
 
 .contact-hero {
   min-height: 320px !important; }
@@ -779,6 +805,111 @@ object {
   .experience-venue-content {
     margin: 0 auto 20px;
     text-align: left; }
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  min-height: 420px;
+  max-height: 420px; }
+  .carousel-item {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.6s ease-in-out;
+    width: 100%; }
+  .carousel-image {
+    display: block;
+    height: auto;
+    width: 100%; }
+  .carousel-controls {
+    height: 100%;
+    width: 100%; }
+  .carousel-control {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: rgba(105, 187, 194, 0.7);
+    cursor: pointer;
+    font-size: 28px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    transition: background 0.1s ease-in-out;
+    width: 50%;
+    z-index: 99; }
+    .carousel-control:hover {
+      background: rgba(105, 187, 194, 0.9); }
+  .carousel-control.prev {
+    float: left; }
+  .carousel-control.next {
+    float: right; }
+  .carousel-caption {
+    background: rgba(45, 57, 70, 0.7);
+    bottom: 15%;
+    opacity: 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.1s ease-out;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    top: 0px;
+    left: 0px; }
+    .carousel-caption p {
+      font-size: 32px !important;
+      font-size: 2rem !important;
+      color: #fff; }
+  .carousel-indicators {
+    bottom: 5%;
+    left: 5%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    right: 5%;
+    text-align: center;
+    z-index: 2; }
+    .carousel-indicators li {
+      display: inline-block; }
+  .carousel-indicator {
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+    padding: 5px 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: background 0.1s ease-in-out; }
+    .carousel-indicator:hover {
+      background: rgba(0, 0, 0, 0.8); }
+
+.carousel-active:checked + .carousel-item {
+  opacity: 1;
+  pointer-events: auto;
+  position: static; }
+
+.carousel-active:checked + .carousel-item .carousel-caption {
+  transition: opacity 0.6s ease-in;
+  opacity: 1; }
+
+/* If you`re needing more than 3 banners, maybe you might be using another way to represent your info... ;-) */
+#carousel-1:checked ~ .carousel-indicators .carousel-indicator[for='carousel-1'],
+#carousel-2:checked ~ .carousel-indicators .carousel-indicator[for='carousel-2'],
+#carousel-3:checked ~ .carousel-indicators .carousel-indicator[for='carousel-3'] {
+  color: #007f7f; }
+
+@media (min-width: 768px) {
+  .carousel-indicators {
+    background: transparent; }
+  .carousel-control {
+    width: 5%; }
+  .carousel-controls,
+  .carousel-caption,
+  .carousel-indicators {
+    position: absolute; } }
 
 .comingsoon {
   display: -ms-flexbox;

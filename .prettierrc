@@ -1,7 +1,7 @@
 {
-    "printWidth": 100,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "useTabs": true,
-    "semicolons": true
+	"printWidth": 100,
+	"singleQuote": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"semicolons": true
 }
