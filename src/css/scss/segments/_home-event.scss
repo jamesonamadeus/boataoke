@@ -15,6 +15,7 @@
 		@include align-items(center);
 	}
 	&-box {
+		@include transition(all 0.5s ease);
 		@include flexbox(flex);
 		@include align-items(center);
 		min-height: 250px;
@@ -24,6 +25,10 @@
 		-o-background-size: cover;
 		background-size: cover;
 		text-decoration: none;
+
+		&:hover {
+			@include transform(scale(1.1));
+		}
 
 		&-filter {
 			z-index: 1;
