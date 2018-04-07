@@ -1,0 +1,43 @@
+.information {
+	&-container {
+		@include flexbox(flex);
+		@include flex-direction(column);
+		@include align-items(flex-start);
+		@include justify-content(flex-start);
+		padding: 30px 20px;
+	}
+
+	&-content {
+		background: $white;
+		border-radius: 5px;
+		padding: 20px;
+		text-align: center;
+
+		h3 {
+			@include font-size(62);
+			font-family: $font-secondary !important;
+			color: $style-1;
+			margin: 0 auto;
+		}
+
+		p {
+			@include font-size(20);
+			margin-bottom: 50px;
+		}
+	}
+
+	&-savepups {
+		@include flexbox(flex);
+		@include align-items(center);
+		@include justify-content(flex-start);
+	}
+
+	&-map {
+		width: 100%;
+
+		iframe {
+			height: 420px;
+			width: 100%;
+		}
+	}
+}

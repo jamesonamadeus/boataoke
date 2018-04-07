@@ -694,12 +694,12 @@ object {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding: 30px 20px; }
 
 .beneficiary-content {
@@ -714,7 +714,7 @@ object {
     font-size: 1.5rem !important;
     color: #d7becf;
     font-weight: bold;
-    margin: 0 auto; }
+    margin: 0 auto 20px; }
   .beneficiary-content p {
     font-size: 20px !important;
     font-size: 1.25rem !important; }
@@ -735,6 +735,9 @@ object {
   min-height: 320px !important; }
   .contact-hero h2 {
     margin: 0 auto !important; }
+
+.contact-info {
+  padding: 20px; }
 
 .experience-hero {
   min-height: 320px !important; }
@@ -818,8 +821,8 @@ object {
 .carousel {
   overflow: hidden;
   position: relative;
-  min-height: 420px;
-  max-height: 420px; }
+  min-height: 500px;
+  max-height: 500px; }
   .carousel-item {
     opacity: 0;
     pointer-events: none;
@@ -861,7 +864,7 @@ object {
     float: right; }
   .carousel-image {
     display: block;
-    height: 420px;
+    height: 500px;
     text-align: center;
     width: 100%; }
     .carousel-image-1st {
@@ -869,7 +872,7 @@ object {
     .carousel-image-2nd {
       background: linear-gradient(rgba(45, 57, 70, 0.7), rgba(45, 57, 70, 0.7)), url(../images/experience-slider_2.jpg) no-repeat center center; }
     .carousel-image-3rd {
-      background: linear-gradient(rgba(45, 57, 70, 0.7), rgba(45, 57, 70, 0.7)), url(../images/experience-slider_3.jpg) no-repeat center center; }
+      background: linear-gradient(rgba(45, 57, 70, 0.7), rgba(45, 57, 70, 0.7)), url(../images/experience-slider_3.jpg) no-repeat top center; }
     .carousel-image-1st, .carousel-image-2nd, .carousel-image-3rd {
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -942,6 +945,54 @@ object {
   .carousel-caption,
   .carousel-indicators {
     position: absolute; } }
+
+.information-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  padding: 30px 20px; }
+
+.information-content {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center; }
+  .information-content h3 {
+    font-size: 62px !important;
+    font-size: 3.875rem !important;
+    font-family: "Selima", Sans-serif !important;
+    color: #69bbc2;
+    margin: 0 auto; }
+  .information-content p {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 50px; }
+
+.information-savepups {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+
+.information-map {
+  width: 100%; }
+  .information-map iframe {
+    height: 420px;
+    width: 100%; }
 
 .comingsoon {
   display: -ms-flexbox;

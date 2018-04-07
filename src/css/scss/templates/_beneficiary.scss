@@ -9,8 +9,8 @@
 
 	&-info {
 		@include flexbox(flex);
-		@include align-items(flex-start);
-		@include justify-content(flex-start);
+		@include align-items(center);
+		@include justify-content(center);
 		padding: 30px 20px;
 	}
 
@@ -26,7 +26,7 @@
 			@include font-size(24);
 			color: $style-3;
 			font-weight: bold;
-			margin: 0 auto;
+			margin: 0 auto 20px;
 		}
 
 		p {
