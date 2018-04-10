@@ -661,8 +661,6 @@ object {
       min-height: 16vw;
       margin: 10px 30px;
       min-width: 24vw; }
-    .home-sponsors-tier a {
-      width: 100%; }
   .home-sponsors-logos {
     margin: 20px 30px;
     width: 250px; }
@@ -694,7 +692,9 @@ object {
 @media only screen and (max-width: 480px) {
   .home-sponsors-header {
     font-size: 54px !important;
-    font-size: 3.375rem !important; } }
+    font-size: 3.375rem !important; }
+  .home-sponsors-tier a {
+    width: 100%; } }
 
 @media only screen and (max-width: 360px) {
   .home-sponsors-header {
@@ -706,7 +706,6 @@ object {
 
 .home-beneficiary {
   background: #2d3946;
-  min-height: 300px;
   padding: 30px 20px;
   text-align: center; }
   .home-beneficiary-header {
@@ -739,9 +738,36 @@ object {
     font-size: 20px !important;
     font-size: 1.25rem !important; }
   .home-beneficiary-logo {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     max-width: 720px;
     margin: 20px 30px;
     width: 100%; }
+
+@media only screen and (max-width: 800px) {
+  .home-beneficiary-header {
+    font-size: 62px !important;
+    font-size: 3.875rem !important; }
+  .home-beneficiary-logo {
+    max-width: 480px;
+    margin: 20px 0; } }
+
+@media only screen and (max-width: 600px) {
+  .home-beneficiary-header {
+    font-size: 62px !important;
+    font-size: 3.875rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .home-beneficiary-header {
+    font-size: 54px !important;
+    font-size: 3.375rem !important; } }
+
+@media only screen and (max-width: 360px) {
+  .home-beneficiary-header {
+    font-size: 48px !important;
+    font-size: 3rem !important; } }
 
 .home-video {
   background: #2d3946;

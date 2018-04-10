@@ -1,6 +1,5 @@
 .home-beneficiary {
 	background: $style-2;
-	min-height: 300px;
 	padding: 30px 20px;
 	text-align: center;
 
@@ -31,8 +30,47 @@
 	}
 
 	&-logo {
+		@include transition(all 0.5s ease);
 		max-width: 720px;
 		margin: 20px 30px;
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.home-beneficiary {
+		&-header {
+			@include font-size(62);
+		}
+
+		&-logo {
+			max-width: 480px;
+			margin: 20px 0;
+			// width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.home-beneficiary {
+		&-header {
+			@include font-size(62);
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.home-beneficiary {
+		&-header {
+			@include font-size(54);
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.home-beneficiary {
+		&-header {
+			@include font-size(48);
+		}
 	}
 }
