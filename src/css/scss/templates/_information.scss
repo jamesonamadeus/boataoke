@@ -4,25 +4,28 @@
 		@include flex-direction(column);
 		@include align-items(flex-start);
 		@include justify-content(flex-start);
-		padding: 30px 20px;
+		padding: 20px;
 	}
 
 	&-content {
 		background: $white;
 		border-radius: 5px;
-		padding: 20px;
 		text-align: center;
+		margin: 0 auto;
 
 		h3 {
-			@include font-size(62);
+			@include transition(all 0.5s ease);
+			@include font-size(76);
 			font-family: $font-secondary !important;
 			color: $style-1;
 			margin: 20px auto;
 		}
 
 		p {
+			@include transition(all 0.5s ease);
 			@include font-size(20);
-			margin-bottom: 60px;
+			max-width: 800px;
+			margin: 0 auto 30px;
 		}
 	}
 
@@ -46,6 +49,64 @@
 		iframe {
 			height: 420px;
 			width: 100%;
+		}
+	}
+
+	&-venue {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.information {
+		&-savepups {
+			@include flex-direction(column);
+
+			&-info {
+				width: 100%;
+
+				p {
+					margin: 0 auto;
+				}
+			}
+
+			&-image {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.information {
+		&-content {
+			h3 {
+				@include font-size(62);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.information {
+		&-content {
+			h3 {
+				@include font-size(54);
+			}
+
+			p {
+				@include font-size(18);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.information {
+		&-content {
+			h3 {
+				@include font-size(48);
+			}
 		}
 	}
 }
