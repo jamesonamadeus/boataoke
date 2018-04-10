@@ -170,23 +170,14 @@ a {
 @font-face {
   font-family: 'Selima';
   src: url("Selima.eot");
-  src: url("Selima.eot?#iefix") format("embedded-opentype"), url("Selima.woff2") format("woff2"), url("Selima.woff") format("woff"), url("Selima.ttf") format("truetype"), url("Selima.svg#Selima") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  /* IE9 Compat Modes */
+  src: url("Selima.eot?#iefix") format("embedded-opentype"), url("Selima.woff2") format("woff2"), url("Selima.woff") format("woff"), url("Selima.ttf") format("truetype"), url("Selima.svg#svgSelima") format("svg");
+  /* Legacy iOS */ }
 
 @font-face {
   font-family: 'California';
   src: url("California.eot");
-  src: url("California.eot?#iefix") format("embedded-opentype"), url("California.woff2") format("woff2"), url("California.woff") format("woff"), url("California.ttf") format("truetype"), url("California.svg#California") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Summer Hearts';
-  src: url("SummerHearts-Regular.eot");
-  src: url("SummerHearts-Regular.eot?#iefix") format("embedded-opentype"), url("SummerHearts-Regular.woff2") format("woff2"), url("SummerHearts-Regular.woff") format("woff"), url("SummerHearts-Regular.ttf") format("truetype"), url("SummerHearts-Regular.svg#SummerHearts-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("California.eot?#iefix") format("embedded-opentype"), url("California.woff2") format("woff2"), url("California.woff") format("woff"), url("California.ttf") format("truetype"), url("California.svg#California") format("svg"); }
 
 html {
   -webkit-box-sizing: border-box;
@@ -289,7 +280,7 @@ html {
   .hero h2 {
     font-size: 96px !important;
     font-size: 6rem !important;
-    font-family: "Selima", Sans-serif;
+    font-family: "Selima", "Brush Script MT", cursive;
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 1px #69bbc2;
@@ -517,9 +508,13 @@ object {
   text-align: center;
   width: 100%; }
   .home-event-header {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2; }
   .home-event-container {
     -webkit-transition: all 0.5s ease;
@@ -529,6 +524,9 @@ object {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; }
@@ -564,6 +562,10 @@ object {
       top: 0px;
       left: 0px; }
       .home-event-box-filter p {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
         font-size: 24px !important;
         font-size: 1.5rem !important;
         color: #fff;
@@ -577,6 +579,35 @@ object {
       background: linear-gradient(rgba(170, 170, 170, 0.8), rgba(170, 170, 170, 0.8)), url(../images/upcoming-event_3.jpg) no-repeat center center; }
     .home-event-box-sept {
       background: linear-gradient(rgba(215, 190, 207, 0.7), rgba(215, 190, 207, 0.7)), url(../images/upcoming-event_4.jpg) no-repeat center center; }
+    .home-event-box-jun, .home-event-box-jul, .home-event-box-aug, .home-event-box-sept {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-decoration: none; }
+
+@media only screen and (max-width: 1000px) {
+  .home-event-box {
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  .home-event-header {
+    font-size: 62px !important;
+    font-size: 3.875rem !important; }
+  .home-event-box {
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .home-event-header {
+    font-size: 54px !important;
+    font-size: 3.375rem !important; }
+  .home-event-box {
+    min-height: 220px; } }
+
+@media only screen and (max-width: 360px) {
+  .home-event-header {
+    font-size: 48px !important;
+    font-size: 3rem !important; } }
 
 .home-info {
   min-height: 420px;
@@ -586,7 +617,7 @@ object {
   .home-info-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2; }
   .home-info-subheader {
     font-size: 36px !important;
@@ -605,7 +636,7 @@ object {
   .home-sponsors-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2; }
   .home-sponsors-tier {
     -webkit-transition: all 0.5s ease;
@@ -630,7 +661,7 @@ object {
       min-width: 24vw; }
   .home-sponsors-logos {
     margin: 20px 30px;
-    width: 28%; }
+    width: 250px; }
   .home-sponsors-interest {
     font-size: 20px !important;
     font-size: 1.25rem !important; }
@@ -643,7 +674,7 @@ object {
   .home-beneficiary-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2; }
   .home-beneficiary-tier1 {
     -webkit-transition: all 0.5s ease;
@@ -671,6 +702,7 @@ object {
     font-size: 1.25rem !important; }
   .home-beneficiary-logo {
     max-width: 720px;
+    margin: 20px 30px;
     width: 100%; }
 
 .home-video {
@@ -682,7 +714,7 @@ object {
   .home-video-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #d7becf; }
 
 .beneficiary-hero {
@@ -694,21 +726,20 @@ object {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding: 30px 20px; }
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  padding: 20px; }
 
 .beneficiary-content {
   background: #2d3946;
   border-radius: 5px;
   color: #fff;
-  margin-right: 30px;
   padding: 20px;
-  width: 55%; }
+  width: 45%; }
   .beneficiary-content h3 {
     font-size: 24px !important;
     font-size: 1.5rem !important;
@@ -720,10 +751,8 @@ object {
     font-size: 1.25rem !important; }
 
 .beneficiary-image {
-  background: #d7becf;
-  padding: 20px;
   border-radius: 5px;
-  width: 45%; }
+  width: 55%; }
 
 .beneficiary-img {
   display: block;
@@ -757,9 +786,9 @@ object {
   .experience-info-content {
     font-size: 42px !important;
     font-size: 2.625rem !important;
-    font-family: "California", Sans-serif !important;
+    font-family: "California", "Brush Script MT", cursive !important;
     max-width: 720px;
-    margin: 0 auto 20px;
+    margin: 20px auto;
     text-transform: uppercase; }
 
 .experience-event {
@@ -776,7 +805,7 @@ object {
   .experience-event-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2; }
   .experience-event-image {
     background: #d7becf;
@@ -787,7 +816,7 @@ object {
     width: 60%; }
   .experience-event-content {
     color: #fff !important;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     text-align: left; }
 
 .experience-venue {
@@ -804,7 +833,7 @@ object {
   .experience-venue-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2; }
   .experience-venue-map {
     background: #67beb2;
@@ -821,8 +850,8 @@ object {
 .carousel {
   overflow: hidden;
   position: relative;
-  min-height: 500px;
-  max-height: 500px; }
+  min-height: 400px;
+  max-height: 400px; }
   .carousel-item {
     opacity: 0;
     pointer-events: none;
@@ -864,7 +893,7 @@ object {
     float: right; }
   .carousel-image {
     display: block;
-    height: 500px;
+    height: 400px;
     text-align: center;
     width: 100%; }
     .carousel-image-1st {
@@ -969,13 +998,13 @@ object {
   .information-content h3 {
     font-size: 62px !important;
     font-size: 3.875rem !important;
-    font-family: "Selima", Sans-serif !important;
+    font-family: "Selima", "Brush Script MT", cursive !important;
     color: #69bbc2;
-    margin: 0 auto; }
+    margin: 20px auto; }
   .information-content p {
     font-size: 20px !important;
     font-size: 1.25rem !important;
-    margin-bottom: 50px; }
+    margin-bottom: 60px; }
 
 .information-savepups {
   display: -ms-flexbox;
@@ -984,9 +1013,13 @@ object {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start; }
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .information-savepups-info {
+    width: 50%; }
+  .information-savepups-image {
+    width: 50%; }
 
 .information-map {
   width: 100%; }

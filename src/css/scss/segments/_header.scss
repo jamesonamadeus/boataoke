@@ -48,6 +48,15 @@
 	}
 }
 
+@media only screen and (max-width: $break-xlg) {
+	.banner {
+		.logo {
+			&-main {
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	.banner {
 		padding: 15px;

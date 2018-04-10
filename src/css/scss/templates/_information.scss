@@ -17,19 +17,27 @@
 			@include font-size(62);
 			font-family: $font-secondary !important;
 			color: $style-1;
-			margin: 0 auto;
+			margin: 20px auto;
 		}
 
 		p {
 			@include font-size(20);
-			margin-bottom: 50px;
+			margin-bottom: 60px;
 		}
 	}
 
 	&-savepups {
 		@include flexbox(flex);
 		@include align-items(center);
-		@include justify-content(flex-start);
+		@include justify-content(center);
+
+		&-info {
+			width: 50%;
+		}
+
+		&-image {
+			width: 50%;
+		}
 	}
 
 	&-map {

@@ -1,6 +1,6 @@
 //Change Navbar Background on Scroll
 window.onscroll = function() {
-	var bnr = document.querySelector('#banner-nav');
+	var bnr = document.getElementById('banner-nav');
 
 	if (window.pageYOffset >= 400) {
 		bnr.classList.add('banner-nav--scroll');

@@ -17,11 +17,12 @@
 	}
 	&-info {
 		background: $white;
+
 		&-content {
 			@include font-size(42);
 			font-family: $font-teritary !important;
 			max-width: 720px;
-			margin: 0 auto 20px;
+			margin: 20px auto;
 			text-transform: uppercase;
 		}
 	}
@@ -46,7 +47,7 @@
 		}
 		&-content {
 			color: $white !important;
-			margin: 0 auto 20px;
+			margin: 0 auto;
 			text-align: left;
 		}
 	}
@@ -84,8 +85,8 @@
 .carousel {
 	overflow: hidden;
 	position: relative;
-	min-height: 500px;
-	max-height: 500px;
+	min-height: 400px;
+	max-height: 400px;
 
 	&-item {
 		opacity: 0;
@@ -131,7 +132,7 @@
 
 	&-image {
 		display: block;
-		height: 500px;
+		height: 400px;
 		text-align: center;
 		width: 100%;
 

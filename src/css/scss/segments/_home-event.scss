@@ -4,16 +4,21 @@
 	padding: 30px 0;
 	text-align: center;
 	width: 100%;
+
 	&-header {
+		@include transition(all 0.5s ease);
 		@include font-size(76);
 		font-family: $font-secondary !important;
 		color: $style-1;
 	}
+
 	&-container {
 		@include transition(all 0.5s ease);
 		@include flexbox(flex);
+		@include flex-wrap(wrap);
 		@include align-items(center);
 	}
+
 	&-box {
 		@include transition(all 0.5s ease);
 		@include flexbox(flex);
@@ -40,6 +45,7 @@
 			left: 0px;
 
 			p {
+				@include transition(all 0.5s ease);
 				@include font-size(24);
 				color: $white;
 				font-weight: 500;
@@ -65,6 +71,57 @@
 		&-sept {
 			background: linear-gradient(rgba(215, 190, 207, 0.7), rgba(215, 190, 207, 0.7)),
 				url(../images/upcoming-event_4.jpg) no-repeat center center;
+		}
+
+		&-jun,
+		&-jul,
+		&-aug,
+		&-sept {
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			text-decoration: none;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-xlg) {
+	.home-event {
+		&-box {
+			width: 50%;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.home-event {
+		&-header {
+			@include font-size(62);
+		}
+
+		&-box {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.home-event {
+		&-header {
+			@include font-size(54);
+		}
+
+		&-box {
+			min-height: 220px;
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.home-event {
+		&-header {
+			@include font-size(48);
 		}
 	}
 }
