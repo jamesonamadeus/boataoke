@@ -620,7 +620,7 @@ object {
 
 @media only screen and (max-width: 1000px) {
   .home-event {
-    padding: 30px 0 0; }
+    padding: 0; }
     .home-event-box {
       width: 50%; } }
 
@@ -861,6 +861,10 @@ object {
     margin: 0 auto !important; }
 
 .beneficiary-info {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -873,6 +877,10 @@ object {
   padding: 20px; }
 
 .beneficiary-content {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   background: #2d3946;
   border-radius: 5px;
   color: #fff;
@@ -889,6 +897,10 @@ object {
     font-size: 1.25rem !important; }
 
 .beneficiary-image {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   border-radius: 5px;
   width: 55%; }
 
@@ -897,6 +909,47 @@ object {
   border-radius: 5px;
   max-width: 720px;
   width: 100%; }
+
+@media only screen and (max-width: 800px) {
+  .beneficiary-info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    padding: 20px 20px 0; }
+  .beneficiary-content {
+    width: 100%; }
+  .beneficiary-image {
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .beneficiary-info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    padding: 10px; }
+  .beneficiary-content {
+    width: 100%; }
+    .beneficiary-content p {
+      font-size: 18px !important;
+      font-size: 1.125rem !important; } }
 
 .contact-hero {
   min-height: 320px !important; }

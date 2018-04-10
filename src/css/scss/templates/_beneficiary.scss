@@ -8,6 +8,7 @@
 	}
 
 	&-info {
+		@include transition(all 0.5s ease);
 		@include flexbox(flex);
 		@include align-items(flex-start);
 		@include justify-content(flex-start);
@@ -15,6 +16,7 @@
 	}
 
 	&-content {
+		@include transition(all 0.5s ease);
 		background: $style-2;
 		border-radius: 5px;
 		color: $white;
@@ -34,6 +36,7 @@
 	}
 
 	&-image {
+		@include transition(all 0.5s ease);
 		border-radius: 5px;
 		width: 55%;
 	}
@@ -43,5 +46,45 @@
 		border-radius: 5px;
 		max-width: 720px;
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.beneficiary {
+		&-info {
+			@include flexbox(flex);
+			@include flex-direction(column);
+			@include align-items(flex-start);
+			@include justify-content(flex-start);
+			padding: 20px 20px 0;
+		}
+
+		&-content {
+			width: 100%;
+		}
+
+		&-image {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.beneficiary {
+		&-info {
+			@include flexbox(flex);
+			@include flex-direction(column);
+			@include align-items(flex-start);
+			@include justify-content(flex-start);
+			padding: 10px;
+		}
+
+		&-content {
+			width: 100%;
+
+			p {
+				@include font-size(18);
+			}
+		}
 	}
 }
