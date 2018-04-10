@@ -24,3 +24,36 @@
 		margin-left: -8px;
 	}
 }
+
+@media only screen and (max-width: $break-med) {
+	.home-info {
+		&-header {
+			@include font-size(62);
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.home-info {
+		&-header {
+			@include font-size(54);
+		}
+
+		&-content {
+			@include font-size(18);
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.home-info {
+		&-header {
+			@include font-size(48);
+		}
+
+		&-logos {
+			margin: 20px 0;
+			width: 250px;
+		}
+	}
+}

@@ -1,13 +1,45 @@
 .home-video {
 	background: $style-2;
 	color: $white;
-	min-height: 480px;
-	padding: 30px 20px;
+	padding: 30px 20px 25px;
 	text-align: center;
 
 	&-header {
 		@include font-size(76);
 		font-family: $font-secondary !important;
 		color: $style-3;
+	}
+
+	iframe {
+		@include transition(all 0.5s ease);
+		height: 450px;
+		width: 800px;
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.home-video {
+		iframe {
+			height: 360px;
+			width: 640px;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.home-video {
+		iframe {
+			height: 240px;
+			width: 426px;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.home-video {
+		iframe {
+			height: 144px;
+			width: 256px;
+		}
 	}
 }

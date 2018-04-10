@@ -47,6 +47,10 @@
 			@include flex-direction(column);
 			margin: 20px auto 20px;
 			width: 100%;
+
+			a {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -55,12 +59,6 @@
 	.home-sponsors {
 		&-header {
 			@include font-size(54);
-		}
-
-		&-tier {
-			a {
-				width: 100%;
-			}
 		}
 	}
 }

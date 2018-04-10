@@ -257,12 +257,17 @@ html {
     width: 100%; } }
 
 .hero {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   background: url(../images/hero-bg-lg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 400px;
+  padding: 20px;
   width: 100%;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -284,10 +289,18 @@ html {
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 1px #69bbc2;
-    margin: 0 auto 5px; }
+    margin: 0 auto; }
   .hero-logo {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     max-width: 480px; }
   .hero-cta {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     font-size: 24px !important;
     font-size: 1.5rem !important;
     border: 1px solid #fff;
@@ -296,6 +309,20 @@ html {
     .hero-cta:hover {
       background: #d7becf;
       border: 1px solid #fff; }
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    min-height: 300px; }
+    .hero-logo {
+      max-width: 360px; }
+    .hero-cta {
+      font-size: 20px !important;
+      font-size: 1.25rem !important;
+      margin-top: -10px; } }
+
+@media only screen and (max-width: 400px) {
+  .hero-logo {
+    max-width: 280px; } }
 
 img,
 video,
@@ -420,11 +447,9 @@ object {
         opacity: 1; }
 
 @media only screen and (max-width: 400px) {
-  .banner {
-    padding: 15px; }
-    .banner .logo-main {
-      margin: 14px 0 0;
-      width: 160px; } }
+  .banner .logo-main {
+    margin: 14px 0 0;
+    width: 160px; } }
 
 .footer {
   display: -ms-flexbox;
@@ -632,6 +657,27 @@ object {
   .home-info-adjustment {
     margin-left: -8px; }
 
+@media only screen and (max-width: 600px) {
+  .home-info-header {
+    font-size: 62px !important;
+    font-size: 3.875rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .home-info-header {
+    font-size: 54px !important;
+    font-size: 3.375rem !important; }
+  .home-info-content {
+    font-size: 18px !important;
+    font-size: 1.125rem !important; } }
+
+@media only screen and (max-width: 360px) {
+  .home-info-header {
+    font-size: 48px !important;
+    font-size: 3rem !important; }
+  .home-info-logos {
+    margin: 20px 0;
+    width: 250px; } }
+
 .home-sponsors {
   padding: 30px 20px;
   text-align: center; }
@@ -687,14 +733,14 @@ object {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin: 20px auto 20px;
-    width: 100%; } }
+    width: 100%; }
+    .home-sponsors-tier a {
+      width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   .home-sponsors-header {
     font-size: 54px !important;
-    font-size: 3.375rem !important; }
-  .home-sponsors-tier a {
-    width: 100%; } }
+    font-size: 3.375rem !important; } }
 
 @media only screen and (max-width: 360px) {
   .home-sponsors-header {
@@ -772,14 +818,35 @@ object {
 .home-video {
   background: #2d3946;
   color: #fff;
-  min-height: 480px;
-  padding: 30px 20px;
+  padding: 30px 20px 25px;
   text-align: center; }
   .home-video-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
     font-family: "Selima", "Brush Script MT", cursive !important;
     color: #d7becf; }
+  .home-video iframe {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 450px;
+    width: 800px; }
+
+@media only screen and (max-width: 800px) {
+  .home-video iframe {
+    height: 360px;
+    width: 640px; } }
+
+@media only screen and (max-width: 600px) {
+  .home-video iframe {
+    height: 240px;
+    width: 426px; } }
+
+@media only screen and (max-width: 400px) {
+  .home-video iframe {
+    height: 144px;
+    width: 256px; } }
 
 .beneficiary-hero {
   min-height: 320px !important; }
