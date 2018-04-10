@@ -88,6 +88,8 @@
 
 @media only screen and (max-width: $break-xlg) {
 	.home-event {
+		padding: 30px 0 0;
+
 		&-box {
 			width: 50%;
 		}
@@ -113,7 +115,7 @@
 		}
 
 		&-box {
-			min-height: 220px;
+			min-height: 200px;
 		}
 	}
 }

@@ -13,7 +13,7 @@
 		@include flexbox(flex);
 		@include justify-content(center);
 		@include align-items(flex-start);
-		margin: 20px auto 50px;
+		margin: 20px auto 40px;
 		width: 100%;
 
 		&-box {
@@ -21,6 +21,10 @@
 			min-height: 16vw;
 			margin: 10px 30px;
 			min-width: 24vw;
+		}
+
+		a {
+			width: 100%;
 		}
 	}
 
@@ -31,5 +35,43 @@
 
 	&-interest {
 		@include font-size(20);
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.home-sponsors {
+		&-header {
+			@include font-size(62);
+		}
+
+		&-tier {
+			@include transition(all 0.5s ease);
+			@include flexbox(flex);
+			@include justify-content(center);
+			@include flex-direction(column);
+			margin: 20px auto 20px;
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.home-sponsors {
+		&-header {
+			@include font-size(54);
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.home-sponsors {
+		&-header {
+			@include font-size(48);
+		}
+
+		&-logos {
+			margin: 20px 0;
+			width: 250px;
+		}
 	}
 }
