@@ -22,8 +22,7 @@
 			@include font-size(42);
 			font-family: $font-teritary !important;
 			max-width: 720px;
-			margin: 20px auto;
-			text-transform: uppercase;
+			margin: 20px auto 10px;
 		}
 	}
 	&-event {
@@ -155,6 +154,7 @@
 		&-2nd,
 		&-3rd {
 			@include flexbox(flex);
+			@include flex-direction(column);
 			@include justify-content(center);
 			@include align-items(center);
 			-webkit-background-size: cover;
@@ -164,10 +164,10 @@
 		}
 
 		p {
-			@include font-size(32);
+			@include font-size(30);
 			color: $white;
 			max-width: 80%;
-			margin: 0 auto;
+			margin: 0 auto 15px;
 			text-shadow: 1px 1px 2px $style-1;
 		}
 	}
@@ -222,16 +222,59 @@
 	color: #007f7f;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $break-med) {
 	.carousel-indicators {
 		background: transparent;
 	}
 	.carousel-control {
-		width: 7%;
+		width: 6%;
 	}
 	.carousel-controls,
 	.carousel-caption,
 	.carousel-indicators {
 		position: absolute;
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.carousel {
+		&-image {
+			p {
+				@include font-size(24);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.experience {
+		&-info {
+			padding: 20px;
+
+			&-content {
+				@include font-size(36);
+				margin: 10px auto 0px;
+			}
+		}
+	}
+
+	.carousel {
+		&-image {
+			p {
+				@include font-size(20);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.experience {
+		&-info {
+			padding: 15px;
+
+			&-content {
+				@include font-size(30);
+			}
+		}
 	}
 }

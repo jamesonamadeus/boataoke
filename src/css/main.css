@@ -979,8 +979,7 @@ object {
     font-size: 2.625rem !important;
     font-family: "California", "Brush Script MT", cursive !important;
     max-width: 720px;
-    margin: 20px auto;
-    text-transform: uppercase; }
+    margin: 20px auto 10px; }
 
 .experience-event {
   display: -ms-flexbox;
@@ -1097,6 +1096,9 @@ object {
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
       -ms-flex-pack: center;
       -webkit-justify-content: center;
       justify-content: center;
@@ -1108,11 +1110,11 @@ object {
       -o-background-size: cover;
       background-size: cover; }
     .carousel-image p {
-      font-size: 32px !important;
-      font-size: 2rem !important;
+      font-size: 30px !important;
+      font-size: 1.875rem !important;
       color: #fff;
       max-width: 80%;
-      margin: 0 auto;
+      margin: 0 auto 15px;
       text-shadow: 1px 1px 2px #69bbc2; }
   .carousel-indicators {
     bottom: 5%;
@@ -1156,15 +1158,38 @@ object {
 #carousel-3:checked ~ .carousel-indicators .carousel-indicator[for='carousel-3'] {
   color: #007f7f; }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .carousel-indicators {
     background: transparent; }
   .carousel-control {
-    width: 7%; }
+    width: 6%; }
   .carousel-controls,
   .carousel-caption,
   .carousel-indicators {
     position: absolute; } }
+
+@media only screen and (max-width: 800px) {
+  .carousel-image p {
+    font-size: 24px !important;
+    font-size: 1.5rem !important; } }
+
+@media only screen and (max-width: 600px) {
+  .experience-info {
+    padding: 20px; }
+    .experience-info-content {
+      font-size: 36px !important;
+      font-size: 2.25rem !important;
+      margin: 10px auto 0px; }
+  .carousel-image p {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .experience-info {
+    padding: 15px; }
+    .experience-info-content {
+      font-size: 30px !important;
+      font-size: 1.875rem !important; } }
 
 .information-container {
   display: -ms-flexbox;
