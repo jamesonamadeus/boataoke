@@ -1,10 +1,15 @@
 .experience {
+	&-slider {
+		margin-bottom: 20px;
+	}
+
 	&-hero {
 		min-height: 320px !important;
 		h2 {
 			margin: 0 auto !important;
 		}
 	}
+
 	&-info,
 	&-event,
 	&-venue {
@@ -15,6 +20,7 @@
 			@include font-size(20);
 		}
 	}
+
 	&-info {
 		background: $white;
 
@@ -25,6 +31,7 @@
 			margin: 20px auto 10px;
 		}
 	}
+
 	&-event {
 		@include flexbox(flex);
 		@include justify-content(center);
@@ -82,6 +89,7 @@
 }
 
 .carousel {
+	@include transition(all 0.5s ease);
 	overflow: hidden;
 	position: relative;
 	min-height: 400px;
@@ -113,7 +121,7 @@
 		height: 100%;
 		line-height: 40px;
 		text-align: center;
-		width: 50%;
+		width: 6%;
 		z-index: 99;
 
 		&:hover {
@@ -202,6 +210,12 @@
 			background: rgba(105, 187, 194, 0.5);
 		}
 	}
+
+	&-controls,
+	&-caption,
+	&-indicators {
+		position: absolute;
+	}
 }
 
 .carousel-active:checked + .carousel-item {
@@ -211,7 +225,7 @@
 }
 
 .carousel-active:checked + .carousel-item .carousel-caption {
-	transition: opacity 0.6s ease-in;
+	@include transition(all 0.5s ease);
 	opacity: 1;
 }
 
@@ -220,20 +234,6 @@
 #carousel-2:checked ~ .carousel-indicators .carousel-indicator[for='carousel-2'],
 #carousel-3:checked ~ .carousel-indicators .carousel-indicator[for='carousel-3'] {
 	color: #007f7f;
-}
-
-@media (min-width: $break-med) {
-	.carousel-indicators {
-		background: transparent;
-	}
-	.carousel-control {
-		width: 6%;
-	}
-	.carousel-controls,
-	.carousel-caption,
-	.carousel-indicators {
-		position: absolute;
-	}
 }
 
 @media only screen and (max-width: $break-lg) {
@@ -253,13 +253,18 @@
 
 			&-content {
 				@include font-size(36);
-				margin: 10px auto 0px;
+				margin: 5px auto 0px;
 			}
 		}
 	}
 
 	.carousel {
+		min-height: 320px;
+		max-height: 320px;
+
 		&-image {
+			height: 320px;
+
 			p {
 				@include font-size(20);
 			}
@@ -269,12 +274,33 @@
 
 @media only screen and (max-width: $break-sm) {
 	.experience {
+		&-slider {
+			margin-bottom: 5px !important;
+		}
+
 		&-info {
 			padding: 15px;
 
 			&-content {
 				@include font-size(30);
 			}
+		}
+	}
+
+	.carousel {
+		min-height: 280px;
+		max-height: 280px;
+
+		&-image {
+			height: 280px;
+
+			p {
+				@include font-size(18);
+			}
+		}
+
+		&-indicators {
+			bottom: 1%;
 		}
 	}
 }
