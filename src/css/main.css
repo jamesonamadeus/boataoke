@@ -285,7 +285,7 @@ html {
   .hero h2 {
     font-size: 96px !important;
     font-size: 6rem !important;
-    font-family: "Selima", "Brush Script MT", cursive;
+    font-family: "Selima", "Lobster";
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 1px #69bbc2;
@@ -698,7 +698,7 @@ object {
     transition: all 0.5s ease;
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2; }
   .home-event-container {
     -webkit-transition: all 0.5s ease;
@@ -803,7 +803,7 @@ object {
   .home-info-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2; }
   .home-info-subheader {
     font-size: 36px !important;
@@ -843,7 +843,7 @@ object {
   .home-sponsors-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2; }
   .home-sponsors-tier {
     -webkit-transition: all 0.5s ease;
@@ -916,7 +916,7 @@ object {
   .home-beneficiary-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2; }
   .home-beneficiary-tier1 {
     -webkit-transition: all 0.5s ease;
@@ -982,7 +982,7 @@ object {
   .home-video-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #d7becf; }
   .home-video iframe {
     -webkit-transition: all 0.5s ease;
@@ -1132,7 +1132,7 @@ object {
   .experience-info-content {
     font-size: 42px !important;
     font-size: 2.625rem !important;
-    font-family: "California", "Brush Script MT", cursive !important;
+    font-family: "California", "Lobster" !important;
     max-width: 720px;
     margin: 20px auto 10px; }
 
@@ -1150,7 +1150,7 @@ object {
   .experience-event-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2; }
   .experience-event-image {
     background: #d7becf;
@@ -1178,7 +1178,7 @@ object {
   .experience-venue-header {
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2; }
   .experience-venue-map {
     background: #67beb2;
@@ -1389,7 +1389,7 @@ object {
     transition: all 0.5s ease;
     font-size: 76px !important;
     font-size: 4.75rem !important;
-    font-family: "Selima", "Brush Script MT", cursive !important;
+    font-family: "Selima", "Lobster" !important;
     color: #69bbc2;
     margin: 20px auto; }
   .information-content p {
