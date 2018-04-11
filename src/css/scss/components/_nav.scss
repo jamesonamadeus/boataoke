@@ -1,7 +1,9 @@
 .nav {
+	@include transition(all 0.5s ease);
 	width: 100%;
 
 	&-list {
+		@include transition(all 0.5s ease);
 		@include flexbox(flex);
 		@include align-items(center);
 		@include justify-content(space-around);
@@ -10,6 +12,7 @@
 	}
 
 	&-item {
+		@include transition(all 0.5s ease);
 		color: $white;
 		list-style: none;
 		margin: 0 10px;
@@ -24,34 +27,210 @@
 	}
 
 	&-link {
-		@include transition(0.3s all ease);
 		@include font-size(18);
+		@include transition(all 0.5s ease);
 		color: $white;
+		font-family: $font-primary;
 		padding: 15px 18px;
 		text-decoration: none;
 		text-align: center;
 	}
 
 	&-cta {
-		@include transition(0.3s all ease);
+		@include transition(all 0.5s ease);
 		background: $style-1;
 		border: 1px solid $white;
 		border-radius: 3px;
 		padding: 6px 10px 5px;
-		color: $white;
 		margin-left: 20px;
+		background: $primary-color;
+		color: $white;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background: $white;
 			border: 1px solid $style-1;
 		}
 	}
 }
 
+//Nav Variables
+$brgr-height: 60px;
+$brgr-border-width: 4px;
+$brgr-margin: 40px;
+$brgr-bun-width: 35px;
+$brgr-bun-height: $brgr-border-width;
+$brgr-font-size: 22px;
+$brgr-text-pad: $brgr-margin;
+$brgr-transition-speed: 0.5s;
+$brgr-transition: all $brgr-transition-speed ease;
+
+@media only screen and (max-width: $break-lg) {
+	.nav {
+		&-list {
+			@include flexbox(flex);
+			@include flex-direction(column);
+			position: absolute;
+			right: 0;
+			top: 55px;
+			z-index: 10;
+
+			&:not(.open) {
+				visibility: hidden;
+			}
+
+			&.open {
+				background: rgba(255, 255, 255, 0.9);
+				width: 100%;
+				visibility: visible;
+
+				.nav-item {
+					animation-duration: $brgr-transition-speed;
+					animation-fill-mode: both;
+					animation-name: slideInLeft;
+				}
+			}
+		}
+
+		&-item {
+			color: lighten($black, 10%);
+			list-style-type: none;
+			padding: 12px 0;
+			text-align: center;
+			transform: translateX(-250px);
+			width: 100%;
+
+			&:first-child {
+				padding-top: 20px;
+			}
+
+			&:not(.open) {
+				animation-duration: $brgr-transition-speed;
+				animation-fill-mode: both;
+				animation-name: slideOutLeft;
+			}
+		}
+
+		&-link {
+			background: transparent;
+			color: lighten($black, 10%);
+			font-size: $brgr-font-size;
+			font-weight: 400;
+			padding: 18px 34px 18px 45px;
+			text-decoration: none;
+			transition: $brgr-transition;
+			width: 100%;
+
+			&:hover,
+			&--active {
+				color: $primary-color;
+			}
+		}
+
+		&-cta {
+			border-radius: 0;
+			border: none;
+		}
+
+		&-menu {
+			border-radius: 50%;
+			cursor: pointer;
+			display: inline-block;
+			height: $brgr-height;
+			padding-left: 8px;
+			padding-top: 13px;
+			position: relative;
+			right: 0;
+			top: 4px;
+			transition: $brgr-transition;
+			user-select: none;
+			width: $brgr-height;
+			z-index: 20;
+
+			&:hover,
+			&:active,
+			&:focus {
+				.nav-bun {
+					background: lighten($primary-color, 30%);
+				}
+			}
+		}
+
+		&-contain {
+			@include flexbox(flex);
+			@include justify-content(flex-end);
+
+			&.open {
+				.nav-bun--top {
+					background: $primary-color;
+					top: 12px;
+					transform: rotate(45deg);
+				}
+
+				.nav-bun--mid {
+					opacity: 0;
+				}
+
+				.nav-bun--bot {
+					background: $primary-color;
+					top: 4px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		&-bun {
+			background: $primary-color;
+			position: relative;
+			transition: $brgr-transition;
+
+			&--top,
+			&--mid,
+			&--bot {
+				height: $brgr-bun-height;
+				width: $brgr-bun-width;
+			}
+
+			&--top {
+				top: 0;
+			}
+
+			&--mid {
+				top: 8px;
+			}
+
+			&--bot {
+				top: 16px;
+			}
+		}
+	}
+}
+
+//Nav Keyframes
+@keyframes slideInLeft {
+	0% {
+		transform: translate3d(250px, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slideOutLeft {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(250px, 0, 0);
+		visibility: hidden;
+	}
+}
+
 @media only screen and (max-width: $break-xlg) {
 	.nav {
-		// width: 90%;
-
 		&-item {
 			margin: 0 5px;
 		}

@@ -2,6 +2,10 @@
 	@include transition(all 0.5s ease);
 	@include flexbox(flex);
 	@include flex-direction(column);
+	border-bottom: 1px solid transparent;
+	top: 0;
+	width: 100%;
+	z-index: 99;
 
 	.logo {
 		&-heading {
@@ -44,14 +48,63 @@
 				@include transition(all 1s ease);
 				opacity: 1;
 			}
+
+			.nav {
+				width: 80%;
+			}
 		}
 	}
 }
 
 @media only screen and (max-width: $break-xlg) {
 	.banner {
+		&-nav--scroll {
+			.nav {
+				width: 70%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.banner {
 		.logo {
-			&-main {
+			&-heading {
+				width: 50% !important;
+			}
+
+			&-img {
+				opacity: 1 !important;
+			}
+		}
+
+		.nav {
+			width: 70%;
+		}
+
+		&-nav--top {
+			.logo {
+				&-heading {
+					width: 50% !important;
+				}
+
+				&-img {
+					opacity: 1 !important;
+				}
+			}
+
+			.nav {
+				width: 70%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.banner {
+		&-nav--scroll {
+			.nav {
+				width: 70%;
 			}
 		}
 	}
