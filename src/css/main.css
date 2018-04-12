@@ -48,8 +48,7 @@ body {
   font-size: 100%;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.6;
-  overflow-x: hidden; }
+  line-height: 1.6; }
 
 blockquote {
   border-left: 2px solid #69bbc2;
@@ -408,16 +407,17 @@ object {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
+    display: none;
     position: absolute;
     right: 0;
     margin: 0 auto;
-    top: 60px;
+    top: 72px;
     z-index: 10; }
     .nav-list:not(.open) {
       visibility: hidden; }
     .nav-list.open {
       background: rgba(255, 255, 255, 0.9);
-      top: 69px;
+      display: block;
       width: 100%;
       visibility: visible; }
       .nav-list.open .nav-item {
@@ -455,15 +455,15 @@ object {
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
-    height: 60px;
-    padding-left: 8px;
+    height: 72px;
+    padding-left: 10px;
     padding-top: 13px;
     position: relative;
     right: 0;
-    top: 4px;
+    top: 5px;
     transition: all 0.5s ease;
     user-select: none;
-    width: 60px;
+    width: 72px;
     z-index: 20; }
     .nav-menu:hover .nav-bun, .nav-menu:active .nav-bun, .nav-menu:focus .nav-bun {
       background: #d6ecee; }
@@ -476,27 +476,27 @@ object {
     justify-content: flex-end; }
     .nav-contain.open .nav-bun--top {
       background: #69bbc2;
-      top: 12px;
+      top: 14px;
       transform: rotate(45deg); }
     .nav-contain.open .nav-bun--mid {
       opacity: 0; }
     .nav-contain.open .nav-bun--bot {
       background: #69bbc2;
-      top: 4px;
+      top: 3px;
       transform: rotate(-45deg); }
   .nav-bun {
     background: #69bbc2;
     position: relative;
     transition: all 0.5s ease; }
     .nav-bun--top, .nav-bun--mid, .nav-bun--bot {
-      height: 4px;
-      width: 35px; }
+      height: 6px;
+      width: 45px; }
     .nav-bun--top {
       top: 0; }
     .nav-bun--mid {
-      top: 8px; }
+      top: 10px; }
     .nav-bun--bot {
-      top: 16px; } }
+      top: 20px; } }
 
 @keyframes slideInLeft {
   0% {
@@ -514,11 +514,7 @@ object {
 
 @media only screen and (max-width: 1000px) {
   .nav-item {
-    margin: 0 5px; } }
-
-@media only screen and (max-width: 800px) {
-  .nav-item {
-    margin: 0 5px; } }
+    margin: 0; } }
 
 .banner {
   -webkit-transition: all 0.5s ease;
@@ -568,6 +564,7 @@ object {
     justify-content: space-between;
     background: #2d3946;
     border-bottom: 1px solid #69bbc2;
+    position: relative;
     z-index: 75;
     width: 100%; }
     .banner-nav--top {

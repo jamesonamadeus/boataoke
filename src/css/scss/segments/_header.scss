@@ -30,6 +30,7 @@
 		@include justify-content(space-between);
 		background: $style-2;
 		border-bottom: 1px solid $style-1;
+		position: relative;
 		z-index: 75;
 		width: 100%;
 
