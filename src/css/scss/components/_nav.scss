@@ -81,6 +81,7 @@ $brgr-transition: all $brgr-transition-speed ease;
 
 			&.open {
 				background: rgba(255, 255, 255, 0.9);
+				top: 69px;
 				width: 100%;
 				visibility: visible;
 
