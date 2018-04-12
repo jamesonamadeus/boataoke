@@ -818,12 +818,14 @@ object {
     font-size: 3.875rem !important; } }
 
 @media only screen and (max-width: 480px) {
-  .home-info-header {
-    font-size: 54px !important;
-    font-size: 3.375rem !important; }
-  .home-info-content {
-    font-size: 18px !important;
-    font-size: 1.125rem !important; } }
+  .home-info {
+    padding: 20px 10px; }
+    .home-info-header {
+      font-size: 54px !important;
+      font-size: 3.375rem !important; }
+    .home-info-content {
+      font-size: 18px !important;
+      font-size: 1.125rem !important; } }
 
 @media only screen and (max-width: 360px) {
   .home-info-header {
@@ -1343,7 +1345,7 @@ object {
   .experience-slider {
     margin-bottom: 5px !important; }
   .experience-info {
-    padding: 15px; }
+    padding: 20px 10px; }
     .experience-info-content {
       font-size: 28px !important;
       font-size: 1.75rem !important; }

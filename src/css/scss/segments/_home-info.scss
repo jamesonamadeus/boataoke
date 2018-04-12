@@ -35,6 +35,8 @@
 
 @media only screen and (max-width: $break-sm) {
 	.home-info {
+		padding: 20px 10px;
+
 		&-header {
 			@include font-size(54);
 		}
