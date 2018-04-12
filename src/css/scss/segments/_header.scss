@@ -18,7 +18,7 @@
 		&-img {
 			@include transition(all 0.1s ease);
 			opacity: 0;
-			margin: 10px 10px 0 30px;
+			margin: 12px 10px 0 15px;
 			width: 180px;
 		}
 	}
@@ -41,7 +41,7 @@
 			position: fixed;
 
 			.logo-heading {
-				width: 20%;
+				width: 40%;
 			}
 
 			.logo-img {
@@ -67,7 +67,7 @@
 }
 
 @media only screen and (max-width: $break-lg) {
-	.banner {
+	.banner-alt {
 		.logo {
 			&-heading {
 				width: 50% !important;
@@ -80,22 +80,6 @@
 
 		.nav {
 			width: 70%;
-		}
-
-		&-nav--top {
-			.logo {
-				&-heading {
-					width: 50% !important;
-				}
-
-				&-img {
-					opacity: 1 !important;
-				}
-			}
-
-			.nav {
-				width: 70%;
-			}
 		}
 	}
 }
